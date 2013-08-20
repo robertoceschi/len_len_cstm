@@ -85,7 +85,16 @@ header {
 	font-size: 1em;
 	margin: 0;
 	display: inline-block;
+
   }
+  span.outer-header {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 999;
+  }
+
 }
 
 // Off canvas section to show/hide the Chapters
@@ -138,17 +147,26 @@ header {
 
 #main_image {
   background-image: image-url('ellen-header.jpg');
+  background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover !important;
-  height: 250px;
-  margin: 0 auto;
-  padding:0;
+  height: auto;
+  min-height: 250px;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
   overflow: hidden;
   text-align: center;
   @include at-breakpoint($M) {
-	height: 900px;
-	@include background-size(cover);
-	background-repeat:no-repeat;
-
+	min-height: 480px;
+  }
+  @include at-breakpoint($L) {
+	min-height: 900px;
+	background-repeat: no-repeat;
+	background-size: contain !important;
   }
 }
+
+
+
