@@ -481,57 +481,16 @@ header {
   font-size: .8em;
 }
 
-/* line 35, ../sass/partials/_modules.scss */
-.testimonial, header {
-  background-color: #f4f4f4;
-  border-top: 2px solid #dddddd;
-  border-bottom: 2px solid #dddddd;
-  padding: 1em 2em;
-}
-/* line 40, ../sass/partials/_modules.scss */
-.testimonial > img, header > img {
-  display: inline-block;
-  width: 17%;
-}
-/* line 44, ../sass/partials/_modules.scss */
-.testimonial blockquote, header blockquote {
-  margin: 0 0 0 3%;
-  padding: 0 .5em;
-  width: 76%;
-  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
-  font-size: 2.4em;
-  font-style: italic;
-  display: inline-block;
-  vertical-align: top;
-}
-/* line 53, ../sass/partials/_modules.scss */
-.testimonial blockquote footer, header blockquote footer {
-  font-size: .6em;
-  border-top: 2px dotted #dddddd;
-  margin: 20px 0 0 0;
-  padding: 10px 0 0 0;
-}
-/* line 60, ../sass/partials/_modules.scss */
-.testimonial blockquote.small, header blockquote.small {
-  font-size: .9em;
-}
-
-/* line 68, ../sass/partials/_modules.scss */
-header {
-  border-top: none;
-  padding: 1em 0;
-  margin: 0 0 20px 0;
-}
-/* line 74, ../sass/partials/_modules.scss */
+/* line 41, ../sass/partials/_modules.scss */
 header .header-buttons-list {
   float: right;
 }
-/* line 76, ../sass/partials/_modules.scss */
+/* line 43, ../sass/partials/_modules.scss */
 header .header-buttons-list > * {
   float: left;
   display: inline-block;
 }
-/* line 81, ../sass/partials/_modules.scss */
+/* line 48, ../sass/partials/_modules.scss */
 header .main-link {
   border: 1px solid #d6d6d6;
   padding: .3em .6em;
@@ -549,22 +508,25 @@ header .main-link {
 header .main-link:hover {
   background-color: #ccffcc;
 }
-/* line 84, ../sass/partials/_modules.scss */
+/* line 51, ../sass/partials/_modules.scss */
 header .main-link-headline {
-  font-size: 1em;
-  margin: 0;
-  display: inline-block;
+  font-size: 1.5em;
+  width: 80%;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 auto;
 }
-/* line 90, ../sass/partials/_modules.scss */
+/* line 59, ../sass/partials/_modules.scss */
 header span.outer-header {
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
   z-index: 999;
+  background: rgba(255, 255, 255, 0.7);
 }
 
-/* line 102, ../sass/partials/_modules.scss */
+/* line 72, ../sass/partials/_modules.scss */
 .off-canvas-navigation {
   display: block;
   width: 100%;
@@ -572,47 +534,23 @@ header span.outer-header {
   margin: 20px 0 10px 0;
 }
 
-/* line 113, ../sass/partials/_modules.scss */
+/* line 83, ../sass/partials/_modules.scss */
 .sidebar-button {
   display: block;
-  background-color: magenta;
-  border: 1px solid #d6d6d6;
-  padding: .3em .6em;
-  margin-left: .7em;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-  border-radius: 8px;
-  text-shadow: 0 1px 2px white;
-  color: gray;
-  background-color: #fffff5;
-  margin: 0;
-}
-/* line 13, ../sass/partials/_mixins.scss */
-.sidebar-button:hover {
-  background-color: #ffffcc;
-}
-/* line 120, ../sass/partials/_modules.scss */
-.sidebar-button:before {
-  content: ">> View ";
-}
-/* line 125, ../sass/partials/_modules.scss */
-.active .sidebar-button:before {
-  content: "<< Hide ";
-}
-/* line 130, ../sass/partials/_modules.scss */
-.no-js .sidebar-button {
-  display: none;
+  color: black;
+  margin-top: -2em;
+  margin-left: 1em;
+  font-family: "sacfd";
+  position: absolute;
 }
 
-/* line 138, ../sass/partials/_modules.scss */
+/* line 95, ../sass/partials/_modules.scss */
 .purchase-links-wrapper {
   list-style: none;
   margin: 30px 0 0 0;
 }
 
-/* line 148, ../sass/partials/_modules.scss */
+/* line 105, ../sass/partials/_modules.scss */
 #main_image {
   background-image: url('../img/ellen-header.jpg?1376551733');
   background-repeat: no-repeat;
@@ -620,7 +558,7 @@ header span.outer-header {
   background-size: cover !important;
   height: auto;
   min-height: 250px;
-  margin-top: 2em;
+  margin-top: -1em;
   margin-left: auto;
   margin-right: auto;
   padding: 0;
@@ -628,34 +566,34 @@ header span.outer-header {
   text-align: center;
 }
 @media (min-width: 47em) {
-  /* line 148, ../sass/partials/_modules.scss */
+  /* line 105, ../sass/partials/_modules.scss */
   #main_image {
     min-height: 480px;
   }
 }
 @media (min-width: 75em) {
-  /* line 148, ../sass/partials/_modules.scss */
+  /* line 105, ../sass/partials/_modules.scss */
   #main_image {
     min-height: 700px;
     background-size: cover !important;
   }
 }
 @media (min-width: 90em) {
-  /* line 148, ../sass/partials/_modules.scss */
+  /* line 105, ../sass/partials/_modules.scss */
   #main_image {
     background-size: cover !important;
     height: 900px;
   }
 }
 
-/* line 176, ../sass/partials/_modules.scss */
+/* line 133, ../sass/partials/_modules.scss */
 #content {
   /*width: 980px;*/
   /*width: 95%;*/
   margin: 0.3em auto;
 }
 
-/* line 183, ../sass/partials/_modules.scss */
+/* line 140, ../sass/partials/_modules.scss */
 .item {
   display: block;
   float: left;
@@ -668,18 +606,18 @@ header span.outer-header {
   transition: left .4s ease-in-out, top .4s ease-in-out .4s;
 }
 
-/* line 195, ../sass/partials/_modules.scss */
+/* line 152, ../sass/partials/_modules.scss */
 .featured {
   width: 620px;
 }
 
-/* line 199, ../sass/partials/_modules.scss */
+/* line 156, ../sass/partials/_modules.scss */
 .item img {
   width: 300px;
   height: auto;
 }
 
-/* line 204, ../sass/partials/_modules.scss */
+/* line 161, ../sass/partials/_modules.scss */
 .featured img {
   width: 620px;
   height: auto;
