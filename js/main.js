@@ -29,7 +29,3 @@ jQuery(document).ready(function($) {
             $(this).masonry('reload');
         });
 });
-
-
-
-

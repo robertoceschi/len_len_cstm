@@ -38,6 +38,8 @@ $M: 47em;
 // roughly speaking, around 750px wide with 16px body font
 $L: 75em;
 // roughly speaking, around 1200px wide with 16px body font
+$L: 90em;
+// roughly speaking, around 1200px wide with 16px body font
 
 * {
   @include border-box-sizing;
@@ -147,4 +149,4 @@ $L: 75em;
   }
 }
 
-
+;

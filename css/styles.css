@@ -379,7 +379,7 @@ header {
   box-sizing: border-box;
 }
 
-/* line 46, ../sass/partials/_layout.scss */
+/* line 48, ../sass/partials/_layout.scss */
 [class^="inner"] {
   max-width: 107em;
   padding-left: 0;
@@ -409,13 +409,13 @@ header {
   clear: both;
 }
 
-/* line 56, ../sass/partials/_layout.scss */
+/* line 58, ../sass/partials/_layout.scss */
 [role="navigation"] {
   width: 100%;
   float: left;
   margin-right: 0.93458%;
 }
-/* line 63, ../sass/partials/_layout.scss */
+/* line 65, ../sass/partials/_layout.scss */
 .js [role="navigation"] {
   margin-left: -100%;
   width: 41.1215%;
@@ -424,7 +424,7 @@ header {
   float: left;
   z-index: 2;
 }
-/* line 70, ../sass/partials/_layout.scss */
+/* line 72, ../sass/partials/_layout.scss */
 .active [role="navigation"] {
   margin-left: 0;
   margin-top: 4em;
@@ -433,30 +433,30 @@ header {
   margin-right: 0.93458%;
 }
 
-/* line 88, ../sass/partials/_layout.scss */
+/* line 90, ../sass/partials/_layout.scss */
 .main-content {
   width: 100%;
   float: left;
   margin-right: 0.93458%;
 }
-/* line 94, ../sass/partials/_layout.scss */
+/* line 96, ../sass/partials/_layout.scss */
 .js .main-content {
   margin-left: 0;
   float: left;
   z-index: 1;
 }
-/* line 100, ../sass/partials/_layout.scss */
+/* line 102, ../sass/partials/_layout.scss */
 .active .main-content {
   margin-right: -100%;
 }
 
-/* line 112, ../sass/partials/_layout.scss */
+/* line 114, ../sass/partials/_layout.scss */
 [role="contentinfo"] {
   clear: both;
   margin-top: 3em;
 }
 
-/* line 119, ../sass/partials/_layout.scss */
+/* line 121, ../sass/partials/_layout.scss */
 .purchase-links-wrapper {
   max-width: 52.5em;
   padding-left: 0;
@@ -471,7 +471,7 @@ header {
   clear: both;
 }
 
-/* line 123, ../sass/partials/_layout.scss */
+/* line 125, ../sass/partials/_layout.scss */
 .purchase-link {
   width: 100%;
   float: left;
@@ -483,13 +483,13 @@ header {
   margin-right: 0;
 }
 @media (min-width: 18em) {
-  /* line 123, ../sass/partials/_layout.scss */
+  /* line 125, ../sass/partials/_layout.scss */
   .purchase-link {
     width: 48.57143%;
     float: left;
     margin-right: 2.85714%;
   }
-  /* line 132, ../sass/partials/_layout.scss */
+  /* line 134, ../sass/partials/_layout.scss */
   .purchase-link:nth-of-type(even) {
     width: 48.57143%;
     float: right;
@@ -497,13 +497,13 @@ header {
   }
 }
 @media (min-width: 47em) {
-  /* line 123, ../sass/partials/_layout.scss */
+  /* line 125, ../sass/partials/_layout.scss */
   .purchase-link {
     width: 22.85714%;
     float: left;
     margin-right: 2.85714%;
   }
-  /* line 141, ../sass/partials/_layout.scss */
+  /* line 143, ../sass/partials/_layout.scss */
   .purchase-link:nth-of-type(even) {
     width: 22.85714%;
     float: left;
@@ -694,7 +694,7 @@ header span.outer-header {
     min-height: 480px;
   }
 }
-@media (min-width: 75em) {
+@media (min-width: 90em) {
   /* line 148, ../sass/partials/_modules.scss */
   #main_image {
     min-height: 900px;
