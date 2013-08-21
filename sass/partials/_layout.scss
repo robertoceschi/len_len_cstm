@@ -7,21 +7,15 @@
 
 $total-columns: 12;
 // a 12-column grid
-$column-width: 8em;
+$column-width: 5em;
 // each column is 5em wide
 $gutter-width: 1em;
 // 1em Gutter between columns
 $grid-padding: 0;
 //no padding
 
-// Use this variable if you want a fully fluid grid
-//$container-style: fluid;
+$container-style: fluid;
 
-// Use this variable if you want to set a width for the fluid container
-//$container-width: 80%;
-
-// Use this variable for a fixed grid
-//$container-style: static;
 
 $border-box-sizing: true;
 // If you weren't setting border-box as the box-sizing elsewhere, you could uncomment the following mixin and remove the variable above:
@@ -38,8 +32,8 @@ $M: 47em;
 // roughly speaking, around 750px wide with 16px body font
 $L: 75em;
 // roughly speaking, around 1200px wide with 16px body font
-$L: 90em;
-// roughly speaking, around 1200px wide with 16px body font
+$XL: 90em;
+.fluid-container { @include container; }
 
 * {
   @include border-box-sizing;
@@ -74,17 +68,6 @@ $L: 90em;
 	margin-top: 4em;
 	@include span-columns(5, 12);
   }
-
-  // Medium plus layout - applied at larger viewports
-  @include at-breakpoint($M) {
-	// if no JavaScript but media query support apply following:
-	//@include span-columns(3, 12);
-	// With JavaScript AND media query support apply following:
-	.js & {
-	  //@include span-columns(3, 12);
-	  //margin-left: 0;
-	}
-  }
 }
 
 .main-content {
@@ -102,12 +85,6 @@ $L: 90em;
   .active & {
 	margin-right: -100%;
   }
-
-  // Medium plus layout - applied at larger viewports
-  @include at-breakpoint($M) {
-	//@include prefix(1,12);
-	//@include span-columns(9 omega,12);
-  }
 }
 
 // The footer section
@@ -115,38 +92,3 @@ $L: 90em;
   clear: both;
   margin-top: 3em;
 }
-
-// Grid override for purchase links
-@include with-grid-settings(4, 12em, 1.5em, 0) {
-  .purchase-links-wrapper {
-	@include container;
-	//@include susy-grid-background;
-  }
-  .purchase-link {
-
-	// Standard (default)
-	@include span-columns(4, 4);
-	@include nth-omega;
-
-	// Small screen
-	@include at-breakpoint($XS) {
-	  @include span-columns(2, 4);
-	  &:nth-of-type(even) {
-		@include span-columns(2 omega, 4);
-	  }
-	}
-
-	// Larger screen
-	@include at-breakpoint($M) {
-
-	  @include span-columns(1, 4);
-	  &:nth-of-type(even) {
-		@include span-columns(1, 4);
-	  }
-	  @include nth-omega;
-	}
-
-  }
-}
-
-;

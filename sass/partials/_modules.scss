@@ -163,22 +163,30 @@ header {
   }
   @include at-breakpoint($L) {
 	min-height: 900px;
-	background-repeat: no-repeat;
 	background-size: contain !important;
   }
+  @include at-breakpoint($XL) {
+	background-size: contain !important;
+	height: 1200px;
+	margin: 0 auto;
+  }
+
 }
 
 //masonry
+
 #content {
-   width: auto;
-   margin: 0 auto;
- }
+  /*width: 980px;*/
+  /*width: 95%;*/
+  //width: auto;
+  //margin: 0 auto;
+}
 
 .item {
   display: block;
   float: left;
   width: 300px;
-  margin: 30px 10px 20px 0;
+  margin: 30px 20px 20px 0;
   -webkit-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
   -moz-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
   -ms-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
