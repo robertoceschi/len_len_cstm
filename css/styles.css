@@ -705,18 +705,16 @@ header span.outer-header {
 
 /* line 172, ../sass/partials/_modules.scss */
 #content {
-  /*width: 980px;*/
-  width: 95%;
   width: auto;
   margin: 0 auto;
 }
 
-/* line 179, ../sass/partials/_modules.scss */
+/* line 177, ../sass/partials/_modules.scss */
 .item {
   display: block;
   float: left;
   width: 300px;
-  margin: 0 10px 20px 0;
+  margin: 30px 10px 20px 0;
   -webkit-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
   -moz-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
   -ms-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
@@ -724,18 +722,18 @@ header span.outer-header {
   transition: left .4s ease-in-out, top .4s ease-in-out .4s;
 }
 
-/* line 191, ../sass/partials/_modules.scss */
+/* line 189, ../sass/partials/_modules.scss */
 .featured {
   width: 620px;
 }
 
-/* line 195, ../sass/partials/_modules.scss */
+/* line 193, ../sass/partials/_modules.scss */
 .item img {
   width: 300px;
   height: auto;
 }
 
-/* line 200, ../sass/partials/_modules.scss */
+/* line 198, ../sass/partials/_modules.scss */
 .featured img {
   width: 620px;
   height: auto;
