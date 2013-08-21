@@ -33,6 +33,8 @@ $M: 47em;
 $L: 75em;
 // roughly speaking, around 1200px wide with 16px body font
 $XL: 90em;
+// roughly speaking, around 1400px wide with 16px body font
+
 .fluid-container { @include container; }
 
 * {
@@ -41,7 +43,7 @@ $XL: 90em;
 
 [class^="inner"] {
   @include container;
-  @include susy-grid-background;
+  //@include susy-grid-background;
   overflow: hidden;
 }
 
@@ -92,3 +94,4 @@ $XL: 90em;
   clear: both;
   margin-top: 3em;
 }
+

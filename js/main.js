@@ -1,3 +1,4 @@
+
 // Make the showSidebar function into a variable so it can be easily called
 var showSidebar = function() {
     $('body').toggleClass("active");
@@ -28,4 +29,7 @@ jQuery(document).ready(function($) {
     }).imagesLoaded(function() {
             $(this).masonry('reload');
         });
+
+
+
 });
