@@ -54,7 +54,6 @@ header {
 	font-weight: 400;
 	text-align: center;
 	margin: 0 auto;
-
   }
   span.outer-header {
 	position: fixed;
@@ -63,11 +62,13 @@ header {
 	top: 0;
 	z-index: 999;
 	background: rgba(255, 255, 255, 0.7);
+    @include box-shadow(rgb(204, 204, 204) 0 1px 8px);
   }
 
 }
 
-// Off canvas section to show/hide the Chapters
+
+// Menu Button for show/hide off-Canvas Navigation
 // ====================================================================
 .off-canvas-navigation {
   display: block;
@@ -109,7 +110,7 @@ header {
   background-size: cover !important;
   height: auto;
   min-height: 250px;
-  margin-top: -1em;
+  margin-top: 4em;
   margin-left: auto;
   margin-right: auto;
   padding: 0;
@@ -119,12 +120,34 @@ header {
 	min-height: 480px;
   }
   @include at-breakpoint($L) {
-	min-height: 700px;
+    margin-top: -1em;
+    min-height: 700px;
 	background-size: cover !important;
   }
   @include at-breakpoint($XL) {
 	background-size: cover !important;
 	height: 900px;
+
+  }
+
+   .headline {
+     color: #fff;
+     margin-top: 20%;
+     margin-left: auto;
+     margin-right: auto;
+     line-height: 1.25;
+     text-transform: uppercase;
+ }
+  a  {
+    display: none;
+    @include at-breakpoint($M) {
+      display: block;
+      border-bottom: none;
+    }
+  }
+  p {
+    color: #fff;
+    font-style: italic;
   }
 }
 
@@ -147,6 +170,8 @@ header {
   -ms-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
   -o-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
   transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+
+
 }
 
 .featured {

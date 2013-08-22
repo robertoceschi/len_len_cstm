@@ -19,20 +19,21 @@
 
 <body>
 <div class="fluid-container">
-<header role="banner">
+    <header role="banner">
         <span class="outer-header">
             <div class="inner-header">
                 <h1 class="main-link-headline"><a href="/">Len Len Likes</a>
-    </h1>
-    <ul class="header-buttons-list">
-                  <!--  <li><a class="main-link color-one" href="#">Buy at Amazon</a></li>
-                    <li><a class="main-link color-two" href="#">Buy at Packt</a></li>-->
-    </ul>
-            <div class="off-canvas-navigation"><a class="sidebar-button" id="sidebar_button" href="#sidebar">Menue</a></div>
+                </h1>
+                <ul class="header-buttons-list">
+                    <!--  <li><a class="main-link color-one" href="#">Buy at Amazon</a></li>
+                      <li><a class="main-link color-two" href="#">Buy at Packt</a></li>-->
+                </ul>
+                <div class="off-canvas-navigation"><a class="sidebar-button" id="sidebar_button"
+                                                      href="#sidebar">Menu</a></div>
             </div>
         </span>
-    <!-- /.inner-header -->
-</header>
+        <!-- /.inner-header -->
+    </header>
 
 <div class="inner-content">
     <nav role="navigation">
@@ -57,14 +58,24 @@
             </li>
 
         </ul>
+
+        <aside id="sociallinks" class="sociallinks">		<h3 class="widget-title">Find me on</h3>
+            <ul class="sociallinks">
+                <li><a href="http://www.facebook.com/elmastudio" class="facebook" title="Facebook" target="_blank">Facebook</a></li>
+                <li><a href="http://www.flickr.com/photos/elmastudio" class="flickr" title="Flickr" target="_blank">Flickr</a></li>
+                <li><a href="#" class="instagram" title="Instagram" target="_blank">Instagram</a></li>
+            </ul><!-- end .sociallinks -->
+
+        </aside>
+
     </nav>
+
 
     <div role="main" class="main-content">
         <div id="main_image">
-            <h1 class="headline">Ich bin Len -Len, das ist mein Blog</h1>
-
-            <p>Willkomen zu meinem Blog</p>
-            <a href="#">Zu meinen Artikel</a>
+            <h1 class="headline">Hallo, ich bin Karin,</br> das ist mein Blog</h1>
+            <p>Willkomen zu meinem Foto- und Reise-Blog!</p>
+            <a href="#content" title="Show Content">Show Content</a>
         </div>
         <div id="content" class="container clearfix">
 
@@ -127,5 +138,13 @@
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
 <script src="js/jquery.masonry.min.js"></script>
+
+<script>
+    jQuery(document).ready(function(){
+        jQuery(".headline").fitText(1.2, { minFontSize: '24px', maxFontSize: '120px' });
+        jQuery("#main_image p").fitText(3,{ minFontSize: '18px', maxFontSize: '90px' });
+
+    });
+</script>
 </body>
 </html>
