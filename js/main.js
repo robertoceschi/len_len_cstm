@@ -1,6 +1,6 @@
 
 // Make the showSidebar function into a variable so it can be easily called
-var showSidebar = function() {
+var showSidebar = function () {
     var $target = $('body').toggleClass("active");
     if ($target.hasClass('active')) {
         $('.outer-header').css('position', 'absolute');
@@ -8,12 +8,9 @@ var showSidebar = function() {
     }
     if (!$target.hasClass('active')) {
         $('.outer-header').css('position', 'fixed');
+        $('.outer-header').css('background', 'rgba(255, 255, 255, 0.7)');
     }
-
-
-
 };
-
 
 
 // add/remove classes everytime the window resize event fires
