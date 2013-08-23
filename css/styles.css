@@ -343,7 +343,7 @@ ul, li {
 
 /* line 22, ../sass/partials/_base.scss */
 a {
-  color: #3D518F;
+  color: #3d518f;
 }
 
 /* line 25, ../sass/partials/_base.scss */
@@ -427,7 +427,7 @@ header {
 /* line 69, ../sass/partials/_layout.scss */
 .active [role="navigation"] {
   margin-left: 0;
-  width: 74.64789%;
+  width: 83.09859%;
   float: left;
   margin-right: 1.40845%;
 }
@@ -436,39 +436,31 @@ header {
   margin-top: 5em;
   margin-left: 11.32075%;
   margin-right: 11.32075%;
+  text-align: center;
 }
-/* line 77, ../sass/partials/_layout.scss */
-[role="navigation"] ul.chapter-list a, [role="navigation"] #sociallinks a {
-  color: white;
-}
-/* line 82, ../sass/partials/_layout.scss */
-[role="navigation"] #sociallinks {
+/* line 79, ../sass/partials/_layout.scss */
+[role="navigation"] #sociallinks, [role="navigation"] body.active nav[role='navigation'] #about_me, body.active nav[role='navigation'] [role="navigation"] #about_me, [role="navigation"] body.active nav[role='navigation'] #search, body.active nav[role='navigation'] [role="navigation"] #search, [role="navigation"] body.active nav[role='navigation'] #categories, body.active nav[role='navigation'] [role="navigation"] #categories {
   margin-top: 3em;
 }
-/* line 85, ../sass/partials/_layout.scss */
-[role="navigation"] #sociallinks h3 {
-  color: white;
-}
 
-/* line 91, ../sass/partials/_layout.scss */
+/* line 85, ../sass/partials/_layout.scss */
 .main-content {
   width: 100%;
   float: left;
   margin-right: 1.40845%;
-  background-color: #fff;
 }
-/* line 97, ../sass/partials/_layout.scss */
+/* line 91, ../sass/partials/_layout.scss */
 .js .main-content {
   margin-left: 0;
   float: left;
   z-index: 1;
 }
-/* line 103, ../sass/partials/_layout.scss */
+/* line 97, ../sass/partials/_layout.scss */
 .active .main-content {
   margin-right: -100%;
 }
 
-/* line 110, ../sass/partials/_layout.scss */
+/* line 103, ../sass/partials/_layout.scss */
 [role="contentinfo"] {
   clear: both;
   margin-top: 3em;
@@ -548,7 +540,63 @@ header span.outer-header {
   box-shadow: #cccccc 0 1px 8px;
 }
 
-/* line 73, ../sass/partials/_modules.scss */
+/* line 75, ../sass/partials/_modules.scss */
+body.active nav[role='navigation'] ul.chapter-list, body.active nav[role='navigation'] [role="navigation"] #sociallinks, [role="navigation"] body.active nav[role='navigation'] #sociallinks, body.active nav[role='navigation'] #about_me, body.active nav[role='navigation'] #search, body.active nav[role='navigation'] #categories {
+  margin-top: 5em;
+  margin-left: 11.32075%;
+  margin-right: 11.32075%;
+  text-align: center;
+}
+/* line 78, ../sass/partials/_modules.scss */
+body.active nav[role='navigation'] ul.chapter-list a, body.active nav[role='navigation'] [role="navigation"] #sociallinks a, [role="navigation"] body.active nav[role='navigation'] #sociallinks a, body.active nav[role='navigation'] #about_me a, body.active nav[role='navigation'] #search a, body.active nav[role='navigation'] #categories a {
+  color: white;
+  font-size: 1em;
+}
+/* line 83, ../sass/partials/_modules.scss */
+body.active nav[role='navigation'] ul.chapter-list li, body.active nav[role='navigation'] [role="navigation"] #sociallinks li, [role="navigation"] body.active nav[role='navigation'] #sociallinks li, body.active nav[role='navigation'] #about_me li, body.active nav[role='navigation'] #search li, body.active nav[role='navigation'] #categories li {
+  font-size: 1.1em;
+}
+/* line 88, ../sass/partials/_modules.scss */
+body.active nav[role='navigation'] #sociallinks h3, body.active nav[role='navigation'] #about_me h3, body.active nav[role='navigation'] #search h3, body.active nav[role='navigation'] #categories h3 {
+  position: relative;
+  margin-top: 20px;
+  color: white;
+}
+/* line 93, ../sass/partials/_modules.scss */
+body.active nav[role='navigation'] #sociallinks h3.one, body.active nav[role='navigation'] #about_me h3.one, body.active nav[role='navigation'] #search h3.one, body.active nav[role='navigation'] #categories h3.one {
+  margin-top: 0;
+}
+/* line 96, ../sass/partials/_modules.scss */
+body.active nav[role='navigation'] #sociallinks h3.one:before, body.active nav[role='navigation'] #about_me h3.one:before, body.active nav[role='navigation'] #search h3.one:before, body.active nav[role='navigation'] #categories h3.one:before {
+  content: "";
+  display: block;
+  border-top: solid 1px white;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+}
+/* line 106, ../sass/partials/_modules.scss */
+body.active nav[role='navigation'] #sociallinks h3.one span, body.active nav[role='navigation'] #about_me h3.one span, body.active nav[role='navigation'] #search h3.one span, body.active nav[role='navigation'] #categories h3.one span {
+  background: black;
+  padding: 0 20px;
+  position: relative;
+  z-index: 5;
+}
+/* line 116, ../sass/partials/_modules.scss */
+body.active nav[role='navigation'] #about_me .about-img-wrap p {
+  font-style: italic;
+  text-align: center;
+}
+/* line 120, ../sass/partials/_modules.scss */
+body.active nav[role='navigation'] #about_me p {
+  color: rgba(255, 255, 255, 0.7);
+  text-align: left;
+  line-height: 1.5;
+}
+
+/* line 139, ../sass/partials/_modules.scss */
 .off-canvas-navigation {
   display: block;
   width: 100%;
@@ -556,7 +604,7 @@ header span.outer-header {
   margin: 20px 0 10px 0;
 }
 
-/* line 84, ../sass/partials/_modules.scss */
+/* line 150, ../sass/partials/_modules.scss */
 .sidebar-button {
   display: block;
   color: black;
@@ -566,13 +614,13 @@ header span.outer-header {
   position: absolute;
 }
 
-/* line 96, ../sass/partials/_modules.scss */
+/* line 162, ../sass/partials/_modules.scss */
 .purchase-links-wrapper {
   list-style: none;
   margin: 30px 0 0 0;
 }
 
-/* line 106, ../sass/partials/_modules.scss */
+/* line 172, ../sass/partials/_modules.scss */
 #main_image {
   background-image: url('../img/ellen-header.jpg?1376551733');
   background-repeat: no-repeat;
@@ -588,13 +636,13 @@ header span.outer-header {
   text-align: center;
 }
 @media (min-width: 47em) {
-  /* line 106, ../sass/partials/_modules.scss */
+  /* line 172, ../sass/partials/_modules.scss */
   #main_image {
     min-height: 480px;
   }
 }
 @media (min-width: 75em) {
-  /* line 106, ../sass/partials/_modules.scss */
+  /* line 172, ../sass/partials/_modules.scss */
   #main_image {
     margin-top: -1em;
     min-height: 700px;
@@ -602,13 +650,13 @@ header span.outer-header {
   }
 }
 @media (min-width: 90em) {
-  /* line 106, ../sass/partials/_modules.scss */
+  /* line 172, ../sass/partials/_modules.scss */
   #main_image {
     background-size: cover !important;
     height: 900px;
   }
 }
-/* line 133, ../sass/partials/_modules.scss */
+/* line 199, ../sass/partials/_modules.scss */
 #main_image .headline {
   color: #fff;
   margin-top: 20%;
@@ -617,31 +665,36 @@ header span.outer-header {
   line-height: 1.25;
   text-transform: uppercase;
 }
-/* line 141, ../sass/partials/_modules.scss */
+/* line 207, ../sass/partials/_modules.scss */
 #main_image a {
   display: none;
 }
 @media (min-width: 47em) {
-  /* line 141, ../sass/partials/_modules.scss */
+  /* line 207, ../sass/partials/_modules.scss */
   #main_image a {
     display: block;
     border-bottom: none;
   }
 }
-/* line 148, ../sass/partials/_modules.scss */
+/* line 214, ../sass/partials/_modules.scss */
 #main_image p {
   color: #fff;
   font-style: italic;
 }
 
-/* line 156, ../sass/partials/_modules.scss */
+/* line 221, ../sass/partials/_modules.scss */
+.main-content {
+  background-color: white;
+}
+
+/* line 230, ../sass/partials/_modules.scss */
 #content {
   /*width: 980px;*/
   /*width: 95%;*/
   margin: 0.3em auto;
 }
 
-/* line 163, ../sass/partials/_modules.scss */
+/* line 237, ../sass/partials/_modules.scss */
 .item {
   display: block;
   float: left;
@@ -654,18 +707,18 @@ header span.outer-header {
   transition: left .4s ease-in-out, top .4s ease-in-out .4s;
 }
 
-/* line 177, ../sass/partials/_modules.scss */
+/* line 251, ../sass/partials/_modules.scss */
 .featured {
   width: 620px;
 }
 
-/* line 181, ../sass/partials/_modules.scss */
+/* line 255, ../sass/partials/_modules.scss */
 .item img {
   width: 300px;
   height: auto;
 }
 
-/* line 186, ../sass/partials/_modules.scss */
+/* line 260, ../sass/partials/_modules.scss */
 .featured img {
   width: 620px;
   height: auto;

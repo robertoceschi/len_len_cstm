@@ -67,6 +67,72 @@ header {
 
 }
 
+// Off-Canvas Navigation
+//
+
+body.active {
+  nav[role='navigation'] {
+    ul.chapter-list {
+      margin-top: 5em;
+      @include squish(1, 1, 9);
+      a {
+        color: $color11;
+        font-size: 1em;
+      }
+        text-align: center;
+      li {
+        font-size: 1.1em;
+      }
+    }
+    #sociallinks {
+      h3 {
+        position: relative;
+        margin-top: 20px;
+        color: $color11;
+      }
+      h3.one {
+        margin-top: 0;
+      }
+      h3.one:before {
+        content: "";
+        display: block;
+        border-top: solid 1px white;
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        top: 50%;
+        z-index: 1;
+      }
+      h3.one span {
+        background: black;
+        padding: 0 20px;
+        position: relative;
+        z-index: 5;
+      }
+    }
+    #about_me {
+      @extend #sociallinks;
+      @extend ul.chapter-list;
+      .about-img-wrap p {
+        font-style: italic;
+        text-align: center;
+      }
+      p {
+        color: $color12;
+        text-align: left;
+        line-height: 1.5;
+      }
+    }
+    #search {
+      @extend #sociallinks;
+      @extend ul.chapter-list;
+    }
+    #categories {
+      @extend #sociallinks;
+      @extend ul.chapter-list;
+    }
+  }
+}
 
 // Menu Button for show/hide off-Canvas Navigation
 // ====================================================================
@@ -150,6 +216,14 @@ header {
     font-style: italic;
   }
 }
+
+
+.main-content {
+  background-color: $color11;
+}
+
+
+
 
 //masonry
 

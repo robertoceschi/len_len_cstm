@@ -68,23 +68,17 @@ $XL: 90em;
   // If button in the 'off-canvas-navigation' area is clicked, 'active' class is applied to the body so the following styles are applied
   .active & {
     margin-left: 0;
-    @include span-columns(9, 12);
+    @include span-columns(10, 12);
   }
 
   ul.chapter-list {
     margin-top: 5em;
     @include squish(1, 1, 9);
-    a {
-      color: $color11;
-    }
+    text-align: center;
   }
-
   #sociallinks {
     @extend ul.chapter-list;
     margin-top: 3em;
-    h3 {
-      color: $color11;
-    }
   }
 }
 
@@ -103,7 +97,6 @@ $XL: 90em;
   .active & {
     margin-right: -100%;
   }
-  background-color: #fff;
 }
 
 // The footer section
@@ -111,4 +104,3 @@ $XL: 90em;
   clear: both;
   margin-top: 3em;
 }
-
