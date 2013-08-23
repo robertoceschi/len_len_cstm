@@ -73,3 +73,14 @@
     font-style: normal;
 
 }
+
+@font-face {
+  font-family: 'icomoon';
+  src: font-url('IconMoon/icomoon.eot');
+  src: font-url('IconMoon/icomoon.eot?#iefix') format('embedded-opentype'),
+       font-url('IconMoon/icomoon.woff') format('woff'),
+       font-url('IconMoon/icomoon.ttf') format('truetype'),
+       font-url('IconMoon/icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
