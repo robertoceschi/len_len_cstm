@@ -45,18 +45,20 @@ header {
 	  display: inline-block;
 	}
   }
-  .main-link {
-	@include button-links(complement(lighten($color9,48%)),complement(lighten($color9,40%)));
-  }
-  .main-link-headline {
-	font-size: 1.5em;
-	width: 80%;
-	font-weight: 400;
+   .main-link-headline {
 	text-align: center;
 	margin: 0 auto;
+    font-family: museo-slab ;
+    font-size:  2.45em;
+    a {
+    color: black;
+    border-bottom: none;
+
+    }
   }
   span.outer-header {
 	position: fixed;
+    height: 50px;
 	left: 0;
 	right: 0;
 	top: 0;
@@ -64,7 +66,6 @@ header {
 	background: rgba(255, 255, 255, 0.7);
     @include box-shadow(rgb(204, 204, 204) 0 1px 8px);
   }
-
 }
 
 // Off-Canvas Navigation
@@ -150,10 +151,13 @@ body.active {
 .sidebar-button {
   display: block;
   color: rgb(0, 0, 0);
-  margin-top: -2em;
-  margin-left: 1em;
+  margin-top: -1.85em;
+  margin-left: 0.5em;
   font-family: "sacfd";
   position: absolute;
+  border-bottom: none;
+  font-size: 1.4em;
+  color: $color10;
 }
 
 
@@ -176,7 +180,7 @@ body.active {
   background-size: cover !important;
   height: auto;
   min-height: 250px;
-  margin-top: 4em;
+  margin-top: 3.2em;
   margin-left: auto;
   margin-right: auto;
   padding: 0;
@@ -202,7 +206,6 @@ body.active {
      margin-left: auto;
      margin-right: auto;
      line-height: 1.25;
-     text-transform: uppercase;
  }
   a  {
     display: none;
@@ -260,4 +263,24 @@ body.active {
 .featured img {
   width: 620px;
   height: auto;
+}
+
+
+
+// Styling Icons
+// ====================================================================
+[data-icon]:before {
+  font-family: 'icomoon';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+
+}
+span.icon-heart {
+  color: red;
+  display: none;
 }
