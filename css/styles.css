@@ -474,6 +474,11 @@ header {
   margin-top: 3em;
 }
 
+/* line 110, ../sass/partials/_layout.scss */
+.banner_new {
+  margin-top: 70px;
+}
+
 /* line 9, ../sass/partials/_modules.scss */
 .chapter-summary a {
   display: block;
