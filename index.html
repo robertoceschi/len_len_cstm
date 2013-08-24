@@ -21,17 +21,7 @@
 
 <body>
 <div class="fluid-container">
-    <header role="banner">
-        <span class="outer-header">
-            <div class="inner-header">
-                <h1 class="main-link-headline"><a href="/">Len Len-Likes</a><span aria-hidden="true" data-icon="&#xe004;" class="icon-heart"></span>
-                </h1>
-            </div>
-            <a class="sidebar-button" href="#sidebar" id="sidebar_button"><span aria-hidden="true" data-icon="&#xe000;" class="down-arrow"></span></a>
 
-        </span>
-        <!-- /.inner-header -->
-    </header>
 
 <div class="inner-content">
     <nav role="navigation">
@@ -128,11 +118,16 @@
 
 
     <div role="main" class="main-content">
-        <div class="banner_new">
-            <a href="#sidebar">Menu</a>
-        </div>
-
+        <header role="banner">
+            <span class="outer_banner">
+            <div class="banner_new">
+                <h1 class="main-link-headline"><a href="/">Len Len-Likes</a><span aria-hidden="true" data-icon="&#xe004;" class="icon-heart"></span></h1>
+                <a class="sidebar-button" href="#sidebar" id="sidebar_button"><span aria-hidden="true" data-icon="&#xe000;" class="down-arrow"></span></a>
+            </div>
+                </span>
+        </header>
         <div id="main_image">
+
             <h1 class="headline">Hallo, ich bin Karin,</br> das ist mein Blog</h1>
             <p>Willkomen zu meinem Foto- und Reise-Blog!</p>
             <a href="#content" title="Show Content">Show Content</a>
@@ -203,12 +198,20 @@
     jQuery(document).ready(function(){
         jQuery(".headline").fitText(1.2, { minFontSize: '24px', maxFontSize: '120px' });
         jQuery("#main_image p").fitText(3,{ minFontSize: '18px', maxFontSize: '90px' });
+
+        jQuery("#main_image p").fitText(3,{ minFontSize: '18px', maxFontSize: '90px' });
+
+        /* fixed header test
+         jQuery("div.banner_new").click(function(){
+         $(this).toggleClass("banner_new");
+         });
+
         jQuery(".main-link-headline a").mouseenter(function(){
             $(".icon-heart").css("display","inline");
         });
         jQuery(".main-link-headline a").mouseleave(function(){
             $(".icon-heart").css("display","none");
-        });
+        });*/
 
 
     });

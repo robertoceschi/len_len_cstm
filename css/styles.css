@@ -474,11 +474,6 @@ header {
   margin-top: 3em;
 }
 
-/* line 110, ../sass/partials/_layout.scss */
-.banner_new {
-  margin-top: 70px;
-}
-
 /* line 9, ../sass/partials/_modules.scss */
 .chapter-summary a {
   display: block;
@@ -631,7 +626,6 @@ body.active nav[role='navigation'] #about_me p {
   background-size: cover !important;
   height: auto;
   min-height: 250px;
-  margin-top: 3.2em;
   margin-left: auto;
   margin-right: auto;
   padding: 0;
@@ -647,7 +641,6 @@ body.active nav[role='navigation'] #about_me p {
 @media (min-width: 75em) {
   /* line 176, ../sass/partials/_modules.scss */
   #main_image {
-    margin-top: -1em;
     min-height: 700px;
     background-size: cover !important;
   }
@@ -666,10 +659,6 @@ body.active nav[role='navigation'] #about_me p {
   margin-left: auto;
   margin-right: auto;
   line-height: 1.25;
-}
-/* line 210, ../sass/partials/_modules.scss */
-#main_image a {
-  display: none;
 }
 @media (min-width: 47em) {
   /* line 210, ../sass/partials/_modules.scss */
@@ -742,4 +731,18 @@ body.active nav[role='navigation'] #about_me p {
 span.icon-heart {
   color: red;
   display: none;
+}
+
+/* line 289, ../sass/partials/_modules.scss */
+div.banner_new {
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-box-shadow: #cccccc 0 1px 8px;
+  -moz-box-shadow: #cccccc 0 1px 8px;
+  box-shadow: #cccccc 0 1px 8px;
+ /* fixed header-test
+  @include at-breakpoint($L) {
+    position: absolute;
+
+    z-index: 9999;
+  }*/
 }

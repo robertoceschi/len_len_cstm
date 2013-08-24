@@ -180,7 +180,7 @@ body.active {
   background-size: cover !important;
   height: auto;
   min-height: 250px;
-  margin-top: 3.2em;
+  //margin-top: 3.2em;
   margin-left: auto;
   margin-right: auto;
   padding: 0;
@@ -190,7 +190,7 @@ body.active {
 	min-height: 480px;
   }
   @include at-breakpoint($L) {
-    margin-top: -1em;
+    //margin-top: -1em;
     min-height: 700px;
 	background-size: cover !important;
   }
@@ -208,7 +208,7 @@ body.active {
      line-height: 1.25;
  }
   a  {
-    display: none;
+    //display: none;
     @include at-breakpoint($M) {
       display: block;
       border-bottom: none;
@@ -283,4 +283,18 @@ body.active {
 span.icon-heart {
   color: red;
   display: none;
+}
+
+
+div.banner_new {
+  background: rgba(255, 255, 255, 0.7);
+  @include box-shadow(rgb(204, 204, 204) 0 1px 8px);
+ /* fixed header-test
+  @include at-breakpoint($L) {
+    position: absolute;
+
+    z-index: 9999;
+  }*/
+
+
 }
