@@ -289,12 +289,13 @@ span.icon-heart {
 div.banner_new {
   background: rgba(255, 255, 255, 0.7);
   @include box-shadow(rgb(204, 204, 204) 0 1px 8px);
- /* fixed header-test
   @include at-breakpoint($L) {
-    position: absolute;
-
+    position: fixed;
+    left: 0;
+    right: 0;
+    top:0;
     z-index: 9999;
-  }*/
+  }
 
 
 }

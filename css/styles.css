@@ -739,10 +739,14 @@ div.banner_new {
   -webkit-box-shadow: #cccccc 0 1px 8px;
   -moz-box-shadow: #cccccc 0 1px 8px;
   box-shadow: #cccccc 0 1px 8px;
- /* fixed header-test
-  @include at-breakpoint($L) {
-    position: absolute;
-
+}
+@media (min-width: 75em) {
+  /* line 289, ../sass/partials/_modules.scss */
+  div.banner_new {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
     z-index: 9999;
-  }*/
+  }
 }
