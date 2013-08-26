@@ -2,12 +2,19 @@
 // ====================================================================
 
 header[role='banner'] {
+  font-family: museo-slab;
   margin-top: -20px;
+  text-align: center;
   height: 42px;
+
+  @include at-breakpoint($L) {
+    margin-top: 0;
+    position: fixed;
+    z-index: 99999;
+
   span.outer_banner {
     div#banner_toggle {
       h1.main-link-headline {
-        text-align: center;
         font-family: museo-slab;
         @include at-breakpoint($M) {
           text-align: right;
@@ -15,6 +22,7 @@ header[role='banner'] {
         }
         @include at-breakpoint($L) {
        margin-top: 0;
+
         }
         a {
           color: black;
@@ -50,6 +58,7 @@ header[role='banner'] {
       }
     }
   }
+}
 }
 
 

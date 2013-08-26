@@ -31,6 +31,11 @@ jQuery(document).ready(function ($) {
         e.preventDefault();
         showSidebar();
     });
+
+    jQuery("#sidebar_button").click(function(){
+
+        $('#banner_toggle').toggleClass("banner_new");
+    });
     jQuery(".headline").fitText();
 
     jQuery(".headline").fitText(1.2, { minFontSize: '24px', maxFontSize: '120px' });
