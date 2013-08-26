@@ -52,21 +52,7 @@ header[role='banner'] {
   }
 }
 
-span.bannerOn {
-  @include at-breakpoint($L) {
-    position: fixed;
-    width: 100%;
-    background-color: #f1f0f0;
-    padding-left: 30px;
-    padding-top: 13px;
-    height: 45px;
-    z-index: 9999;
-    a {
-      border-bottom: none;
-    }
 
-  }
-}
 
 // Off-Canvas Navigation Part
 //

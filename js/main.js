@@ -4,12 +4,12 @@ var showSidebar = function () {
     if ($target.hasClass('active')) {
         // $('.outer-header').css('position', 'absolute');
         // $('.outer-header').css('background', 'white');
-        $('header[role="banner"]').css('visibility', 'hidden')
-        $('.main-content').prepend("<span class='bannerOn'><a href='#banner_fix'><span aria-hidden='true' data-icon='&#xe000;' class='down-arrow '></span></span></a>")
+        //$('header[role="banner"]').css('visibility', 'hidden')
+        //$('.main-content').prepend("<span class='bannerOn'><a href='#banner_fix'><span aria-hidden='true' data-icon='&#xe000;' class='down-arrow '></span></span></a>")
         // $('header[role="banner"]').add("<p id='new'>new paragraph</p>").css('color', 'red');
     }
     if (!$target.hasClass('active')) {
-        //$('.outer-header').css('position', 'fixed');
+          //$('.outer-header').css('position', 'fixed');
         //$('.outer-header').css('background', 'rgba(255, 255, 255, 0.7)');
     }
 };
