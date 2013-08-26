@@ -1,76 +1,78 @@
-// Main navigation links
+// Header[banner] module Part
 // ====================================================================
 
-.chapter-summary {
-  //border-bottom: 2px dotted;
-  //&:last-child {
-  //	border: none;
-  //}
-  a {
-	display: block;
-	padding: .5em;
-	color: $color10;
-	opacity: .8;
-	border: none;
-	&:hover {
-	  opacity: 1;
-	}
-	&:visited {
-	  opacity: .9;
-	}
-	b {
-	  display: block;
-	}
-	span {
-	  display: block;
-	  font-size: .8em;
-	}
-  }
+header[role='banner'] {
+  margin-top: -20px;
+  height: 42px;
+  span.outer_banner {
+    div#banner_toggle {
+      h1.main-link-headline {
+        text-align: center;
+        font-family: museo-slab;
+        @include at-breakpoint($M) {
+          text-align: right;
+          margin-right: 2%;
+        }
+        @include at-breakpoint($L) {
+       margin-top: 0;
+        }
+        a {
+          color: black;
+          border-bottom: none;
+        }
+      }
+      a.sidebar-button {
+        // The actual button to trigger the show/hide of the off canvas area
+        display: block;
+        color: rgb(0, 0, 0);
+        margin-top: -3.3em;
+        margin-left: 2%;
+        font-family: "sacfd";
+        position: absolute;
+        border-bottom: none;
+        font-size: 1em;
+        color: $color10;
+      }
+      a#sidebar_button {
 
-}
-
-// Header[banner] module
-// ====================================================================
-
-header {
-  @extend .testimonial;
-  @extend %clearfix;
-  //border-top: none;
-  //padding: 1em 0;
-  //margin: 0 0 20px 0;
-  .header-buttons-list {
-	float: right;
-	& > * {
-	  float: left;
-	  display: inline-block;
-	}
-  }
-   .main-link-headline {
-	text-align: center;
-	margin: 0 auto;
-    font-family: museo-slab ;
-    font-size:  2.45em;
-    a {
-    color: black;
-    border-bottom: none;
-
+      }
+    }
+    div.banner_new {
+      background: rgba(255, 255, 255, 0.7);
+      //@include box-shadow(rgb(204, 204, 204) 0 1px 8px);
+      @include at-breakpoint($L) {
+        position: fixed;
+        height: 44px;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 9999;
+      }
     }
   }
-  span.outer-header {
-	position: fixed;
-    height: 50px;
-	left: 0;
-	right: 0;
-	top: 0;
-	z-index: 999;
-	background: rgba(255, 255, 255, 0.7);
-    @include box-shadow(rgb(204, 204, 204) 0 1px 8px);
+}
+
+span.bannerOn {
+  @include at-breakpoint($L) {
+    position: fixed;
+    width: 100%;
+    background-color: #f1f0f0;
+    padding-left: 30px;
+    padding-top: 13px;
+    height: 45px;
+    z-index: 9999;
+    a {
+      border-bottom: none;
+    }
+
   }
 }
 
-// Off-Canvas Navigation
+// Off-Canvas Navigation Part
 //
 
+// Main navigation links
+// ====================================================================
 body.active {
   nav[role='navigation'] {
     ul.chapter-list {
@@ -79,8 +81,22 @@ body.active {
       a {
         color: $color11;
         font-size: 1em;
+        display: block;
+        padding: .5em;
+        opacity: .8;
+        border: none;
+        &:hover {
+          opacity: 1;
+        }
+        &:visited {
+          opacity: .9;
+        }
+
+        b {
+          display: block;
+        }
       }
-        text-align: center;
+      text-align: center;
       li {
         font-size: 1.1em;
       }
@@ -137,7 +153,7 @@ body.active {
 
 // Menu Button for show/hide off-Canvas Navigation
 // ====================================================================
-.off-canvas-navigation {
+/*.off-canvas-navigation {
   display: block;
   width: 100%;
   float: left;
@@ -146,29 +162,14 @@ body.active {
   @include at-breakpoint($M) {
 	//display: none;
   }
-}
-// The actual button to trigger the show/hide of the off canvas area
-.sidebar-button {
-  display: block;
-  color: rgb(0, 0, 0);
-  margin-top: -1.85em;
-  margin-left: 0.5em;
-  font-family: "sacfd";
-  position: absolute;
-  border-bottom: none;
-  font-size: 1.4em;
-  color: $color10;
-}
-
+}*/
 
 // Purchase links module
 // ====================================================================
-.purchase-links-wrapper {
+/*.purchase-links-wrapper {
   list-style: none;
   margin: 30px 0 0 0;
-}
-
-
+}*/
 
 // Main Image
 // ====================================================================
@@ -187,27 +188,28 @@ body.active {
   overflow: hidden;
   text-align: center;
   @include at-breakpoint($M) {
-	min-height: 480px;
+    min-height: 480px;
   }
   @include at-breakpoint($L) {
     //margin-top: -1em;
     min-height: 700px;
-	background-size: cover !important;
+    background-size: cover !important;
+    margin-top: -25px;
   }
   @include at-breakpoint($XL) {
-	background-size: cover !important;
-	height: 900px;
+    background-size: cover !important;
+    height: 900px;
 
   }
 
-   .headline {
-     color: #fff;
-     margin-top: 20%;
-     margin-left: auto;
-     margin-right: auto;
-     line-height: 1.25;
- }
-  a  {
+  .headline {
+    color: #fff;
+    margin-top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.25;
+  }
+  a {
     //display: none;
     @include at-breakpoint($M) {
       display: block;
@@ -220,13 +222,9 @@ body.active {
   }
 }
 
-
 .main-content {
   background-color: $color11;
 }
-
-
-
 
 //masonry
 
@@ -248,7 +246,6 @@ body.active {
   -o-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
   transition: left .4s ease-in-out, top .4s ease-in-out .4s;
 
-
 }
 
 .featured {
@@ -265,8 +262,6 @@ body.active {
   height: auto;
 }
 
-
-
 // Styling Icons
 // ====================================================================
 [data-icon]:before {
@@ -280,22 +275,10 @@ body.active {
   -webkit-font-smoothing: antialiased;
 
 }
+
 span.icon-heart {
   color: red;
   display: none;
 }
 
 
-div.banner_new {
-  background: rgba(255, 255, 255, 0.7);
-  @include box-shadow(rgb(204, 204, 204) 0 1px 8px);
-  @include at-breakpoint($L) {
-    position: fixed;
-    left: 0;
-    right: 0;
-    top:0;
-    z-index: 9999;
-  }
-
-
-}
