@@ -1,74 +1,67 @@
-// Header[banner] module Part
+// Header[banner]
 // ====================================================================
 
 header[role='banner'] {
-  font-family: museo-slab;
-  margin-top: -21px;
-  text-align: center;
-  height: 42px;
-  background-color: rgba(255, 255, 255, 0.7);
   width: 100%;
+  height: 50px;
+  overflow: hidden;
   a {
-    color: black;
     border-bottom: none;
+    color: black;
   }
-  .sidebar-button{
-    left:2%;
-    top: 1.5%;
-    position: absolute;
-    @include at-breakpoint($S) {
-      top: 1.5%;
-    }
-    @include at-breakpoint($M) {
-      top: 1.5%;
-    }
-    @include at-breakpoint($L) {
-      top: 28%;
-    }
-  }
-  @include at-breakpoint($M) {
-    text-align: right;
-    padding-right: 2.2%;
-  }
-
   @include at-breakpoint($L) {
-    margin-top: 0;
     position: fixed;
-    z-index: 99999;
-
-  span.outer_banner {
-    div#banner_toggle {
-      h1.main-link-headline {
-        font-family: museo-slab;
-        @include at-breakpoint($M) {
-          text-align: right;
-          margin-right: 2%;
-        }
-        @include at-breakpoint($L) {
-       margin-top: 0;
-        }
-      }
+    z-index: 100000 !important;
+    background: rgba(255, 255, 255, 0.7);
+  }
+  span.sidebar-item {
+    min-width: 65px;
+    display: block;
+    float: left;
+    margin-left: 2.125%;
+    @include at-breakpoint($L) {
+      width: 0;
     }
-    div.banner_new {
-      //background: rgba(255, 255, 255, 0.7);
-      //@include box-shadow(rgb(204, 204, 204) 0 1px 8px);
+
+    .sidebar_button {
+      display: block;
+      height: 50px;
+      padding: 19px 45px 0 0;
+      font-size: 10px;
+      font-size: 0.9em;
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: right;
+    }
+  }
+  div.site-title {
+    width: 68%;
+    min-height: 50px;
+    margin-left: 31%;
+    padding-top: 13px;
+    z-index: 100000;
+    h1.main-link-headline {
+      margin: 0 5% 0 0;
+      padding-bottom: 5px;
+      font-family: museo-slab;
+      font-size: 1.3em;
+      font-weight: bold;
+      line-height: 1.3;
+      word-wrap: break-word;
+      letter-spacing: 1px;
+      display: block;
+      text-align: right;
       @include at-breakpoint($L) {
         position: fixed;
-        height: 44px;
-        left: 0;
-        right: 0;
         top: 0;
-        z-index: 9999;
+        right: 0;
+        margin-right: 3%;
+        margin-top: 1%;
       }
     }
   }
 }
-}
-
-.sidebar-button {
-
-}
-
 
 // Off-Canvas Navigation Part
 //
