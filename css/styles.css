@@ -337,6 +337,7 @@ body {
   font-size: 1em;
   line-height: 1.4;
   background-color: black;
+  font-family: "proxima-nova";
 }
 /* line 14, ../sass/partials/_base.scss */
 .no-fontface body {
@@ -494,23 +495,20 @@ header[role='banner'] span.sidebar-item {
   float: left;
   margin-left: 2.125%;
 }
-@media (min-width: 80em) {
-  /* line 17, ../sass/partials/_modules.scss */
-  header[role='banner'] span.sidebar-item {
-    width: 0;
-  }
-}
-/* line 26, ../sass/partials/_modules.scss */
+/* line 24, ../sass/partials/_modules.scss */
 header[role='banner'] span.sidebar-item .sidebar_button {
   display: block;
   height: 50px;
   padding: 19px 45px 0 0;
-  font-size: 10px;
-  font-size: 0.9em;
+  font-size: 1em;
   color: black;
-  font-weight: bold;
   text-transform: uppercase;
   text-align: right;
+  font-family: "p22-underground-sc";
+}
+/* line 33, ../sass/partials/_modules.scss */
+header[role='banner'] span.sidebar-item .sidebar_button span.menu_title {
+  margin-left: 15%;
 }
 /* line 38, ../sass/partials/_modules.scss */
 header[role='banner'] div.site-title {
@@ -524,9 +522,9 @@ header[role='banner'] div.site-title {
 header[role='banner'] div.site-title h1.main-link-headline {
   margin: 0 5% 0 0;
   padding-bottom: 5px;
-  font-family: museo-slab;
+  font-family: "p22-underground-sc";
   font-size: 1.3em;
-  font-weight: bold;
+  font-weight: normal;
   line-height: 1.3;
   word-wrap: break-word;
   letter-spacing: 1px;
@@ -672,33 +670,34 @@ body.active nav[role='navigation'] #about_me p {
   margin-left: auto;
   margin-right: auto;
   line-height: 1.25;
+  font-family: "proxima-nova";
 }
 @media (min-width: 47em) {
-  /* line 207, ../sass/partials/_modules.scss */
+  /* line 208, ../sass/partials/_modules.scss */
   #main_image a {
     display: block;
     border-bottom: none;
   }
 }
-/* line 214, ../sass/partials/_modules.scss */
+/* line 215, ../sass/partials/_modules.scss */
 #main_image p {
   color: #fff;
   font-style: italic;
 }
 
-/* line 220, ../sass/partials/_modules.scss */
+/* line 221, ../sass/partials/_modules.scss */
 .main-content {
   background-color: white;
 }
 
-/* line 226, ../sass/partials/_modules.scss */
+/* line 227, ../sass/partials/_modules.scss */
 #content {
   /*width: 980px;*/
   /*width: 95%;*/
   margin: 0.3em auto;
 }
 
-/* line 233, ../sass/partials/_modules.scss */
+/* line 234, ../sass/partials/_modules.scss */
 .item {
   display: block;
   float: left;
@@ -711,24 +710,24 @@ body.active nav[role='navigation'] #about_me p {
   transition: left .4s ease-in-out, top .4s ease-in-out .4s;
 }
 
-/* line 246, ../sass/partials/_modules.scss */
+/* line 247, ../sass/partials/_modules.scss */
 .featured {
   width: 620px;
 }
 
-/* line 250, ../sass/partials/_modules.scss */
+/* line 251, ../sass/partials/_modules.scss */
 .item img {
   width: 300px;
   height: auto;
 }
 
-/* line 255, ../sass/partials/_modules.scss */
+/* line 256, ../sass/partials/_modules.scss */
 .featured img {
   width: 620px;
   height: auto;
 }
 
-/* line 262, ../sass/partials/_modules.scss */
+/* line 263, ../sass/partials/_modules.scss */
 [data-icon]:before {
   font-family: 'icomoon';
   content: attr(data-icon);
@@ -740,7 +739,7 @@ body.active nav[role='navigation'] #about_me p {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 274, ../sass/partials/_modules.scss */
+/* line 275, ../sass/partials/_modules.scss */
 span.icon-heart {
   color: red;
   display: none;
