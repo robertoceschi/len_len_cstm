@@ -3,9 +3,33 @@
 
 header[role='banner'] {
   font-family: museo-slab;
-  margin-top: -20px;
+  margin-top: -21px;
   text-align: center;
   height: 42px;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  a {
+    color: black;
+    border-bottom: none;
+  }
+  .sidebar-button{
+    left:2%;
+    top: 1.5%;
+    position: absolute;
+    @include at-breakpoint($S) {
+      top: 1.5%;
+    }
+    @include at-breakpoint($M) {
+      top: 1.5%;
+    }
+    @include at-breakpoint($L) {
+      top: 28%;
+    }
+  }
+  @include at-breakpoint($M) {
+    text-align: right;
+    padding-right: 2.2%;
+  }
 
   @include at-breakpoint($L) {
     margin-top: 0;
@@ -22,31 +46,11 @@ header[role='banner'] {
         }
         @include at-breakpoint($L) {
        margin-top: 0;
-
         }
-        a {
-          color: black;
-          border-bottom: none;
-        }
-      }
-      a.sidebar-button {
-        // The actual button to trigger the show/hide of the off canvas area
-        display: block;
-        color: rgb(0, 0, 0);
-        margin-top: -3.3em;
-        margin-left: 2%;
-        font-family: "sacfd";
-        position: absolute;
-        border-bottom: none;
-        font-size: 1em;
-        color: $color10;
-      }
-      a#sidebar_button {
-
       }
     }
     div.banner_new {
-      background: rgba(255, 255, 255, 0.7);
+      //background: rgba(255, 255, 255, 0.7);
       //@include box-shadow(rgb(204, 204, 204) 0 1px 8px);
       @include at-breakpoint($L) {
         position: fixed;
@@ -61,6 +65,9 @@ header[role='banner'] {
 }
 }
 
+.sidebar-button {
+
+}
 
 
 // Off-Canvas Navigation Part
