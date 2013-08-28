@@ -84,3 +84,14 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'iconic';
+  src:url('Iconic/iconic.eot');
+  src:url('Iconic/iconic.eot?#iefix') format('embedded-opentype'),
+  url('Iconic/iconic.woff') format('woff'),
+  url('Iconic/iconic.ttf') format('truetype'),
+  url('Iconic/iconic.svg#iconic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
