@@ -296,3 +296,54 @@ span.icon-heart {
 }
 
 
+// Search Form
+// ====================================================================
+
+#searchform {
+  max-width: 380px;
+  margin: 0 auto;
+  width: 100%;
+  input[type=text] {
+    width: 60%;
+    margin: 0 2% 0 0;
+    padding: 9px 2%;
+    font-size: 0.75rem;
+    color: #999;
+    letter-spacing: 1px;
+    -webkit-appearance: none;
+    outline-color: transparent;
+    outline-style: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid transparent;
+
+  }
+  input[type=submit] {
+
+
+    margin: 0 2% 0 0;
+
+    font-size: 0.75em;
+    border: none;
+    color: #fff;
+    background-color: $color5;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    -webkit-transition: all 0.18s ease-in-out;
+    -moz-transition: all 0.18s ease-in-out;
+    -o-transition: all 0.18s ease-in-out;
+    transition: all 0.18s ease-in-out;
+    &:hover {
+      opacity: 0.7;
+    }
+
+
+
+  }
+
+  }
+
