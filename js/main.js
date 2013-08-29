@@ -30,8 +30,7 @@ jQuery(document).ready(function ($) {
     jQuery(".headline").fitText();
     // Fittext
     jQuery(".headline").fitText(1.2, { minFontSize: '24px', maxFontSize: '120px' });
-    jQuery("#main_image p").fitText(3, { minFontSize: '18px', maxFontSize: '90px' });
-    jQuery("#main_image p").fitText(3, { minFontSize: '18px', maxFontSize: '90px' });
+    jQuery("#main_image p").fitText(3, { minFontSize: '18px', maxFontSize: '70px' });
     // Initialize Masonry
     $('#content').masonry({
         columnWidth: 320,

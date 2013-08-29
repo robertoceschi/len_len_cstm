@@ -30,11 +30,10 @@ header[role='banner'] {
         font-size: 1em;
       }
       color: rgb(0, 0, 0);
-      text-transform: uppercase;
       text-align: right;
       font-family: "p22-underground-sc";
       span.menu_title {
-        margin-left: 15%;
+        padding-left: 15%;
       }
     }
   }
@@ -294,7 +293,7 @@ body.active {
     //margin-top: -1em;
     min-height: 700px;
     background-size: cover !important;
-    margin-top: -25px;
+    //margin-top: -25px;
   }
   @include at-breakpoint($XL) {
     background-size: cover !important;
