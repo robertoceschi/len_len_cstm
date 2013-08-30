@@ -849,3 +849,9 @@ span.icon-heart {
   color: red;
   display: none;
 }
+
+/* line 402, ../sass/partials/_modules.scss */
+.icon-collapse {
+  color: white;
+  font-size: 2.5em;
+}
