@@ -329,17 +329,23 @@ body.active {
 //masonry
 
 #content {
-  /*width: 980px;*/
+  width: 1040px;
   /*width: 95%;*/
   //width: auto;
-  margin: 0.3em auto;
+  margin: 3.5em auto;
 }
+
+#site-content {
+  max-width: 100%;;
+  margin: 0;
+}
+
 
 .item {
   display: block;
   float: left;
-  width: 300px;
-  margin: 0.5em 20px 20px 0;
+  width: 260px;
+  //margin: 0 20px 20px 0;
   -webkit-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
   -moz-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
   -ms-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
@@ -349,17 +355,24 @@ body.active {
 }
 
 .featured {
-  width: 620px;
+  width: 520px;
 }
 
 .item img {
-  width: 300px;
+  width: 260px;
   height: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 40px;
 }
 
 .featured img {
-  width: 620px;
+  width: 520px;
   height: auto;
+  padding-right: 20x;
+  padding-left: 20px;
+  padding-bottom: 40px;
+
 }
 
 // Styling Icons
