@@ -31,13 +31,17 @@ jQuery(document).ready(function ($) {
     // Fittext
     jQuery(".headline").fitText(1.2, { minFontSize: '24px', maxFontSize: '120px' });
     jQuery("#main_image p").fitText(3, { minFontSize: '18px', maxFontSize: '70px' });
+
+
     // Initialize Masonry
-    $('#content').masonry({
-        columnWidth: 320,
-        itemSelector: '.item',
-        isFitWidth: true,
-        isAnimated: !Modernizr.csstransitions
-    }).imagesLoaded(function () {
-            $(this).masonry('reload');
-        });
+    $(document).ready(function() {
+        $('#content').masonry({
+            columnWidth: 260,
+            itemSelector: '.item',
+            isFitWidth: true
+        }).imagesLoaded(function() {
+                $('#content').masonry('reload');
+            });
+    });
+
 });
