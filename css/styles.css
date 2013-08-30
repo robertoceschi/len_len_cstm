@@ -771,33 +771,35 @@ body.active nav[role='navigation'] #about_me p {
   #main_image a {
     display: block;
     border-bottom: none;
+    margin-bottom: 15px;
   }
 }
-/* line 319, ../sass/partials/_modules.scss */
+/* line 320, ../sass/partials/_modules.scss */
 #main_image p {
   color: #fff;
   font-style: italic;
+  margin-bottom: 7px;
 }
 
-/* line 325, ../sass/partials/_modules.scss */
+/* line 327, ../sass/partials/_modules.scss */
 .main-content {
   background-color: white;
 }
 
-/* line 331, ../sass/partials/_modules.scss */
+/* line 333, ../sass/partials/_modules.scss */
 #content {
   width: 1040px;
   /*width: 95%;*/
   margin: 3.5em auto;
 }
 
-/* line 338, ../sass/partials/_modules.scss */
+/* line 340, ../sass/partials/_modules.scss */
 #site-content {
   max-width: 100%;
   margin: 0;
 }
 
-/* line 344, ../sass/partials/_modules.scss */
+/* line 346, ../sass/partials/_modules.scss */
 .item {
   display: block;
   float: left;
@@ -809,12 +811,12 @@ body.active nav[role='navigation'] #about_me p {
   transition: left .4s ease-in-out, top .4s ease-in-out .4s;
 }
 
-/* line 357, ../sass/partials/_modules.scss */
+/* line 359, ../sass/partials/_modules.scss */
 .featured {
   width: 520px;
 }
 
-/* line 361, ../sass/partials/_modules.scss */
+/* line 363, ../sass/partials/_modules.scss */
 .item img {
   width: 260px;
   height: auto;
@@ -823,7 +825,7 @@ body.active nav[role='navigation'] #about_me p {
   padding-bottom: 40px;
 }
 
-/* line 369, ../sass/partials/_modules.scss */
+/* line 371, ../sass/partials/_modules.scss */
 .featured img {
   width: 520px;
   height: auto;
@@ -832,7 +834,7 @@ body.active nav[role='navigation'] #about_me p {
   padding-bottom: 40px;
 }
 
-/* line 380, ../sass/partials/_modules.scss */
+/* line 382, ../sass/partials/_modules.scss */
 [data-icon]:before {
   font-family: 'icomoon';
   content: attr(data-icon);
@@ -844,13 +846,13 @@ body.active nav[role='navigation'] #about_me p {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 394, ../sass/partials/_modules.scss */
+/* line 396, ../sass/partials/_modules.scss */
 span.icon-heart {
   color: red;
   display: none;
 }
 
-/* line 402, ../sass/partials/_modules.scss */
+/* line 404, ../sass/partials/_modules.scss */
 .icon-collapse {
   color: white;
   font-size: 2.5em;

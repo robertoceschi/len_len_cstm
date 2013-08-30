@@ -314,6 +314,7 @@ body.active {
     @include at-breakpoint($M) {
       display: block;
       border-bottom: none;
+      margin-bottom: 15px;
     }
   }
   p {
