@@ -575,33 +575,64 @@ body.active nav[role='navigation'] ul.chapter-list a:visited, body.active nav[ro
   opacity: .9;
 }
 /* line 97, ../sass/partials/_modules.scss */
+body.active nav[role='navigation'] ul.chapter-list a::before, body.active nav[role='navigation'] #sociallinks a::before, body.active nav[role='navigation'] #about_me a::before, body.active nav[role='navigation'] #search a::before, body.active nav[role='navigation'] #categories a::before, body.active nav[role='navigation'] ul.chapter-list a::after, body.active nav[role='navigation'] #sociallinks a::after, body.active nav[role='navigation'] #about_me a::after, body.active nav[role='navigation'] #search a::after, body.active nav[role='navigation'] #categories a::after {
+  display: inline-block;
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+  transition: transform 0.3s, opacity 0.2s;
+}
+/* line 104, ../sass/partials/_modules.scss */
+body.active nav[role='navigation'] ul.chapter-list a::before, body.active nav[role='navigation'] #sociallinks a::before, body.active nav[role='navigation'] #about_me a::before, body.active nav[role='navigation'] #search a::before, body.active nav[role='navigation'] #categories a::before {
+  margin-right: 10px;
+  content: '[';
+  -webkit-transform: translateX(20px);
+  -moz-transform: translateX(20px);
+  transform: translateX(20px);
+}
+/* line 111, ../sass/partials/_modules.scss */
+body.active nav[role='navigation'] ul.chapter-list a::after, body.active nav[role='navigation'] #sociallinks a::after, body.active nav[role='navigation'] #about_me a::after, body.active nav[role='navigation'] #search a::after, body.active nav[role='navigation'] #categories a::after {
+  margin-left: 10px;
+  content: ']';
+  -webkit-transform: translateX(-20px);
+  -moz-transform: translateX(-20px);
+  transform: translateX(-20px);
+}
+/* line 121, ../sass/partials/_modules.scss */
+body.active nav[role='navigation'] ul.chapter-list a:hover::before, body.active nav[role='navigation'] #sociallinks a:hover::before, body.active nav[role='navigation'] #about_me a:hover::before, body.active nav[role='navigation'] #search a:hover::before, body.active nav[role='navigation'] #categories a:hover::before, body.active nav[role='navigation'] ul.chapter-list a:hover::after, body.active nav[role='navigation'] #sociallinks a:hover::after, body.active nav[role='navigation'] #about_me a:hover::after, body.active nav[role='navigation'] #search a:hover::after, body.active nav[role='navigation'] #categories a:hover::after, body.active nav[role='navigation'] ul.chapter-list a:focus::before, body.active nav[role='navigation'] #sociallinks a:focus::before, body.active nav[role='navigation'] #about_me a:focus::before, body.active nav[role='navigation'] #search a:focus::before, body.active nav[role='navigation'] #categories a:focus::before, body.active nav[role='navigation'] ul.chapter-list a:focus::after, body.active nav[role='navigation'] #sociallinks a:focus::after, body.active nav[role='navigation'] #about_me a:focus::after, body.active nav[role='navigation'] #search a:focus::after, body.active nav[role='navigation'] #categories a:focus::after {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  transform: translateX(0px);
+}
+/* line 129, ../sass/partials/_modules.scss */
 body.active nav[role='navigation'] ul.chapter-list a b, body.active nav[role='navigation'] #sociallinks a b, body.active nav[role='navigation'] #about_me a b, body.active nav[role='navigation'] #search a b, body.active nav[role='navigation'] #categories a b {
   display: block;
 }
-/* line 102, ../sass/partials/_modules.scss */
+/* line 134, ../sass/partials/_modules.scss */
 body.active nav[role='navigation'] ul.chapter-list li, body.active nav[role='navigation'] #sociallinks li, body.active nav[role='navigation'] #about_me li, body.active nav[role='navigation'] #search li, body.active nav[role='navigation'] #categories li {
   font-family: "brandon-grotesque";
   font-weight: normal;
 }
-/* line 110, ../sass/partials/_modules.scss */
+/* line 143, ../sass/partials/_modules.scss */
 body.active nav[role='navigation'] #sociallinks li a, body.active nav[role='navigation'] #about_me li a, body.active nav[role='navigation'] #search li a, body.active nav[role='navigation'] #categories li a {
   display: inline;
 }
-/* line 112, ../sass/partials/_modules.scss */
+/* line 145, ../sass/partials/_modules.scss */
 body.active nav[role='navigation'] #sociallinks li a .icon-facebook, body.active nav[role='navigation'] #about_me li a .icon-facebook, body.active nav[role='navigation'] #search li a .icon-facebook, body.active nav[role='navigation'] #categories li a .icon-facebook, body.active nav[role='navigation'] #sociallinks li a .icon-twitter, body.active nav[role='navigation'] #about_me li a .icon-twitter, body.active nav[role='navigation'] #search li a .icon-twitter, body.active nav[role='navigation'] #categories li a .icon-twitter, body.active nav[role='navigation'] #sociallinks li a .icon-instagram, body.active nav[role='navigation'] #about_me li a .icon-instagram, body.active nav[role='navigation'] #search li a .icon-instagram, body.active nav[role='navigation'] #categories li a .icon-instagram {
   font-size: 2.1em;
 }
-/* line 123, ../sass/partials/_modules.scss */
+/* line 156, ../sass/partials/_modules.scss */
 body.active nav[role='navigation'] #sociallinks h3, body.active nav[role='navigation'] #about_me h3, body.active nav[role='navigation'] #search h3, body.active nav[role='navigation'] #categories h3 {
   position: relative;
   margin-top: 20px;
   color: white;
 }
-/* line 128, ../sass/partials/_modules.scss */
+/* line 161, ../sass/partials/_modules.scss */
 body.active nav[role='navigation'] #sociallinks h3.one, body.active nav[role='navigation'] #about_me h3.one, body.active nav[role='navigation'] #search h3.one, body.active nav[role='navigation'] #categories h3.one {
   margin-top: 0;
 }
-/* line 131, ../sass/partials/_modules.scss */
+/* line 164, ../sass/partials/_modules.scss */
 body.active nav[role='navigation'] #sociallinks h3.one:before, body.active nav[role='navigation'] #about_me h3.one:before, body.active nav[role='navigation'] #search h3.one:before, body.active nav[role='navigation'] #categories h3.one:before {
   content: "";
   display: block;
@@ -612,32 +643,32 @@ body.active nav[role='navigation'] #sociallinks h3.one:before, body.active nav[r
   top: 50%;
   z-index: 1;
 }
-/* line 141, ../sass/partials/_modules.scss */
+/* line 174, ../sass/partials/_modules.scss */
 body.active nav[role='navigation'] #sociallinks h3.one span, body.active nav[role='navigation'] #about_me h3.one span, body.active nav[role='navigation'] #search h3.one span, body.active nav[role='navigation'] #categories h3.one span {
   background: black;
   padding: 0 20px;
   position: relative;
   z-index: 5;
 }
-/* line 151, ../sass/partials/_modules.scss */
+/* line 184, ../sass/partials/_modules.scss */
 body.active nav[role='navigation'] #about_me .about-img-wrap p {
   font-style: italic;
   text-align: center;
 }
-/* line 155, ../sass/partials/_modules.scss */
+/* line 188, ../sass/partials/_modules.scss */
 body.active nav[role='navigation'] #about_me p {
   color: rgba(255, 255, 255, 0.7);
   text-align: left;
   line-height: 1.5;
 }
 
-/* line 176, ../sass/partials/_modules.scss */
+/* line 209, ../sass/partials/_modules.scss */
 #searchform {
   max-width: 380px;
   margin: 0 auto;
   width: 100%;
 }
-/* line 180, ../sass/partials/_modules.scss */
+/* line 213, ../sass/partials/_modules.scss */
 #searchform input[type=text] {
   width: 50%;
   margin: 0 2% 0 0;
@@ -654,12 +685,12 @@ body.active nav[role='navigation'] #about_me p {
   border: 1px solid transparent;
 }
 @media (min-width: 47em) {
-  /* line 180, ../sass/partials/_modules.scss */
+  /* line 213, ../sass/partials/_modules.scss */
   #searchform input[type=text] {
     width: 60%;
   }
 }
-/* line 200, ../sass/partials/_modules.scss */
+/* line 233, ../sass/partials/_modules.scss */
 #searchform input[type=submit] {
   margin: 0 2% 0 0;
   width: 90px;
@@ -679,32 +710,32 @@ body.active nav[role='navigation'] #about_me p {
   -o-transition: all 0.18s ease-in-out;
   transition: all 0.18s ease-in-out;
 }
-/* line 218, ../sass/partials/_modules.scss */
+/* line 251, ../sass/partials/_modules.scss */
 #searchform input[type=submit]:hover {
   background-color: #1edbb6;
 }
 
-/* line 228, ../sass/partials/_modules.scss */
+/* line 261, ../sass/partials/_modules.scss */
 #categories li {
   display: inline-block;
-  border: 1px solid white;
+  border: 1px solid #1edbb6;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin: 3%;
   padding: 1%;
 }
 @media (min-width: 47em) {
-  /* line 228, ../sass/partials/_modules.scss */
+  /* line 261, ../sass/partials/_modules.scss */
   #categories li {
     margin: 1%;
   }
 }
-/* line 239, ../sass/partials/_modules.scss */
+/* line 272, ../sass/partials/_modules.scss */
 #categories li:hover {
   background-color: #1edbb6;
   border: 1px solid #1edbb6;
 }
-/* line 243, ../sass/partials/_modules.scss */
+/* line 276, ../sass/partials/_modules.scss */
 #categories li a {
   color: white;
 }
@@ -723,7 +754,7 @@ body.active nav[role='navigation'] #about_me p {
   list-style: none;
   margin: 30px 0 0 0;
 }*/
-/* line 276, ../sass/partials/_modules.scss */
+/* line 309, ../sass/partials/_modules.scss */
 #main_image {
   background-image: url('../img/ellen-header.jpg?1376551733');
   background-repeat: no-repeat;
@@ -738,26 +769,26 @@ body.active nav[role='navigation'] #about_me p {
   text-align: center;
 }
 @media (min-width: 47em) {
-  /* line 276, ../sass/partials/_modules.scss */
+  /* line 309, ../sass/partials/_modules.scss */
   #main_image {
     min-height: 480px;
   }
 }
 @media (min-width: 80em) {
-  /* line 276, ../sass/partials/_modules.scss */
+  /* line 309, ../sass/partials/_modules.scss */
   #main_image {
     min-height: 700px;
     background-size: cover !important;
   }
 }
 @media (min-width: 90em) {
-  /* line 276, ../sass/partials/_modules.scss */
+  /* line 309, ../sass/partials/_modules.scss */
   #main_image {
     background-size: cover !important;
     height: 900px;
   }
 }
-/* line 304, ../sass/partials/_modules.scss */
+/* line 337, ../sass/partials/_modules.scss */
 #main_image .headline {
   color: #fff;
   margin-top: 20%;
@@ -767,39 +798,39 @@ body.active nav[role='navigation'] #about_me p {
   font-family: "proxima-nova";
 }
 @media (min-width: 47em) {
-  /* line 312, ../sass/partials/_modules.scss */
+  /* line 345, ../sass/partials/_modules.scss */
   #main_image a {
     display: block;
     border-bottom: none;
     margin-bottom: 15px;
   }
 }
-/* line 320, ../sass/partials/_modules.scss */
+/* line 353, ../sass/partials/_modules.scss */
 #main_image p {
   color: #fff;
   font-style: italic;
   margin-bottom: 7px;
 }
 
-/* line 327, ../sass/partials/_modules.scss */
+/* line 360, ../sass/partials/_modules.scss */
 .main-content {
   background-color: white;
 }
 
-/* line 333, ../sass/partials/_modules.scss */
+/* line 366, ../sass/partials/_modules.scss */
 #content {
   width: 1040px;
   /*width: 95%;*/
   margin: 3.5em auto;
 }
 
-/* line 340, ../sass/partials/_modules.scss */
+/* line 373, ../sass/partials/_modules.scss */
 #site-content {
   max-width: 100%;
   margin: 0;
 }
 
-/* line 346, ../sass/partials/_modules.scss */
+/* line 379, ../sass/partials/_modules.scss */
 .item {
   display: block;
   float: left;
@@ -811,12 +842,12 @@ body.active nav[role='navigation'] #about_me p {
   transition: left .4s ease-in-out, top .4s ease-in-out .4s;
 }
 
-/* line 359, ../sass/partials/_modules.scss */
+/* line 392, ../sass/partials/_modules.scss */
 .featured {
   width: 520px;
 }
 
-/* line 363, ../sass/partials/_modules.scss */
+/* line 396, ../sass/partials/_modules.scss */
 .item img {
   width: 260px;
   height: auto;
@@ -825,7 +856,7 @@ body.active nav[role='navigation'] #about_me p {
   padding-bottom: 40px;
 }
 
-/* line 371, ../sass/partials/_modules.scss */
+/* line 404, ../sass/partials/_modules.scss */
 .featured img {
   width: 520px;
   height: auto;
@@ -834,7 +865,7 @@ body.active nav[role='navigation'] #about_me p {
   padding-bottom: 40px;
 }
 
-/* line 382, ../sass/partials/_modules.scss */
+/* line 415, ../sass/partials/_modules.scss */
 [data-icon]:before {
   font-family: 'icomoon';
   content: attr(data-icon);
@@ -846,13 +877,13 @@ body.active nav[role='navigation'] #about_me p {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 396, ../sass/partials/_modules.scss */
+/* line 429, ../sass/partials/_modules.scss */
 span.icon-heart {
   color: red;
   display: none;
 }
 
-/* line 404, ../sass/partials/_modules.scss */
+/* line 437, ../sass/partials/_modules.scss */
 .icon-arrow-down-alt1 {
   font-size: 2.5em;
   color: white;
