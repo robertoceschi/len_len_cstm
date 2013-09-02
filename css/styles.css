@@ -605,7 +605,7 @@ body.active nav[role='navigation'] #sociallinks h3.one, body.active nav[role='na
 body.active nav[role='navigation'] #sociallinks h3.one:before, body.active nav[role='navigation'] #about_me h3.one:before, body.active nav[role='navigation'] #search h3.one:before, body.active nav[role='navigation'] #categories h3.one:before {
   content: "";
   display: block;
-  border-top: solid 1px black;
+  border-top: solid 1px white;
   width: 100%;
   height: 1px;
   position: absolute;
