@@ -733,6 +733,7 @@ body.active nav[role='navigation'] aside#categories ul li.cat-item:hover {
 body.active nav[role='navigation'] aside#categories ul li.cat-item a {
   color: white;
   border-bottom: none;
+  padding: 4%;
 }
 
 /*.off-canvas-navigation {
@@ -749,7 +750,7 @@ body.active nav[role='navigation'] aside#categories ul li.cat-item a {
   list-style: none;
   margin: 30px 0 0 0;
 }*/
-/* line 294, ../sass/partials/_modules.scss */
+/* line 295, ../sass/partials/_modules.scss */
 #main_image {
   background-image: url('../img/ellen-header.jpg?1376551733');
   background-repeat: no-repeat;
@@ -764,26 +765,26 @@ body.active nav[role='navigation'] aside#categories ul li.cat-item a {
   text-align: center;
 }
 @media (min-width: 47em) {
-  /* line 294, ../sass/partials/_modules.scss */
+  /* line 295, ../sass/partials/_modules.scss */
   #main_image {
     min-height: 480px;
   }
 }
 @media (min-width: 80em) {
-  /* line 294, ../sass/partials/_modules.scss */
+  /* line 295, ../sass/partials/_modules.scss */
   #main_image {
     min-height: 700px;
     background-size: cover !important;
   }
 }
 @media (min-width: 90em) {
-  /* line 294, ../sass/partials/_modules.scss */
+  /* line 295, ../sass/partials/_modules.scss */
   #main_image {
     background-size: cover !important;
     height: 900px;
   }
 }
-/* line 322, ../sass/partials/_modules.scss */
+/* line 323, ../sass/partials/_modules.scss */
 #main_image .headline {
   color: #fff;
   margin-top: 20%;
@@ -793,39 +794,39 @@ body.active nav[role='navigation'] aside#categories ul li.cat-item a {
   font-family: "proxima-nova";
 }
 @media (min-width: 47em) {
-  /* line 330, ../sass/partials/_modules.scss */
+  /* line 331, ../sass/partials/_modules.scss */
   #main_image a {
     display: block;
     border-bottom: none;
     margin-bottom: 15px;
   }
 }
-/* line 338, ../sass/partials/_modules.scss */
+/* line 339, ../sass/partials/_modules.scss */
 #main_image p {
   color: #fff;
   font-style: italic;
   margin-bottom: 7px;
 }
 
-/* line 345, ../sass/partials/_modules.scss */
+/* line 346, ../sass/partials/_modules.scss */
 .main-content {
   background-color: white;
 }
 
-/* line 351, ../sass/partials/_modules.scss */
+/* line 352, ../sass/partials/_modules.scss */
 #content {
   width: 1040px;
   /*width: 95%;*/
   margin: 3.5em auto;
 }
 
-/* line 358, ../sass/partials/_modules.scss */
+/* line 359, ../sass/partials/_modules.scss */
 #site-content {
   max-width: 100%;
   margin: 0;
 }
 
-/* line 364, ../sass/partials/_modules.scss */
+/* line 365, ../sass/partials/_modules.scss */
 .item {
   display: block;
   float: left;
@@ -837,12 +838,12 @@ body.active nav[role='navigation'] aside#categories ul li.cat-item a {
   transition: left .4s ease-in-out, top .4s ease-in-out .4s;
 }
 
-/* line 377, ../sass/partials/_modules.scss */
+/* line 378, ../sass/partials/_modules.scss */
 .featured {
   width: 520px;
 }
 
-/* line 381, ../sass/partials/_modules.scss */
+/* line 382, ../sass/partials/_modules.scss */
 .item img {
   width: 260px;
   height: auto;
@@ -851,7 +852,7 @@ body.active nav[role='navigation'] aside#categories ul li.cat-item a {
   padding-bottom: 40px;
 }
 
-/* line 389, ../sass/partials/_modules.scss */
+/* line 390, ../sass/partials/_modules.scss */
 .featured img {
   width: 520px;
   height: auto;
@@ -860,7 +861,7 @@ body.active nav[role='navigation'] aside#categories ul li.cat-item a {
   padding-bottom: 40px;
 }
 
-/* line 400, ../sass/partials/_modules.scss */
+/* line 401, ../sass/partials/_modules.scss */
 [data-icon]:before {
   font-family: 'icomoon';
   content: attr(data-icon);
@@ -872,13 +873,13 @@ body.active nav[role='navigation'] aside#categories ul li.cat-item a {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 414, ../sass/partials/_modules.scss */
+/* line 415, ../sass/partials/_modules.scss */
 span.icon-heart {
   color: red;
   display: none;
 }
 
-/* line 422, ../sass/partials/_modules.scss */
+/* line 423, ../sass/partials/_modules.scss */
 .icon-arrow-down-alt1 {
   font-size: 2.5em;
   color: white;
