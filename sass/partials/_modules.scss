@@ -24,7 +24,10 @@ header[role='banner'] {
     .sidebar_button {
       display: block;
       height: 50px;
-      padding: 19px 45px 0 0;
+      padding: 21px 45px 0 0;
+      @include at-breakpoint($L) {
+        padding-top: 19px;
+      }
       font-size: 0.8em;
       @include at-breakpoint($L) {
         font-size: 1em;
@@ -102,14 +105,14 @@ body.active {
             }
 
             &::before {
-              margin-right: 10px;
+              margin-right: 3px;
               content: '[';
               -webkit-transform: translateX(20px);
               -moz-transform: translateX(20px);
               transform: translateX(20px);
             }
             &::after {
-              margin-left: 10px;
+              margin-left: 3px;
               content: ']';
               -webkit-transform: translateX(-20px);
               -moz-transform: translateX(-20px);
@@ -251,7 +254,7 @@ body.active {
         input[type=submit] {
           margin: 0 2% 0 0;
           width: 90px;
-          padding-top: 1.5%;
+          padding-top: 2%;
           height: 35px;
           font-size: 0.75em;
           border: none;
@@ -365,8 +368,8 @@ body.active {
     font-family: "proxima-nova";
   }
   a {
-    //display: none;
-    @include at-breakpoint($M) {
+     display: none;
+    @include at-breakpoint($L) {
       display: block;
       border-bottom: none;
       margin-bottom: 15px;
@@ -375,7 +378,7 @@ body.active {
   p {
     color: #fff;
     font-style: italic;
-    margin-bottom: 7px;
+    margin-bottom: -2px;
   }
 }
 
@@ -445,6 +448,8 @@ body.active {
   -webkit-font-smoothing: antialiased;
 
 }
+
+
 
 
 
