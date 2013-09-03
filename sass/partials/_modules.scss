@@ -73,7 +73,6 @@ header[role='banner'] {
 // ====================================================================
 body.active {
   nav[role='navigation'] {
-    //@include squish(1, 1, 9);
     text-align: center;
     aside#main_nav {
       margin: 2.5em;
@@ -109,6 +108,7 @@ body.active {
     // social links
     // ======================================================================
     aside#sociallinks {
+      @include squish(1, 1, 9);
       margin-top: 5em;
       ul.sociallinks {
         @extend ul.chapter-list;

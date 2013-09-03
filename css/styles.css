@@ -549,16 +549,16 @@ header[role='banner'] div.site-title h1.main-link-headline {
 body.active nav[role='navigation'] {
   text-align: center;
 }
-/* line 78, ../sass/partials/_modules.scss */
+/* line 77, ../sass/partials/_modules.scss */
 body.active nav[role='navigation'] aside#main_nav {
   margin: 2.5em;
   overflow: hidden;
 }
-/* line 81, ../sass/partials/_modules.scss */
+/* line 80, ../sass/partials/_modules.scss */
 body.active nav[role='navigation'] aside#main_nav ul.chapter-list, body.active nav[role='navigation'] aside#main_nav aside#sociallinks ul.sociallinks, body.active nav[role='navigation'] aside#sociallinks aside#main_nav ul.sociallinks, body.active nav[role='navigation'] aside#main_nav aside#about_me ul.sociallinks, body.active nav[role='navigation'] aside#about_me aside#main_nav ul.sociallinks, body.active nav[role='navigation'] aside#main_nav aside#search ul.sociallinks, body.active nav[role='navigation'] aside#search aside#main_nav ul.sociallinks, body.active nav[role='navigation'] aside#main_nav aside#categories ul.sociallinks, body.active nav[role='navigation'] aside#categories aside#main_nav ul.sociallinks, body.active nav[role='navigation'] aside#main_nav aside#search {
   list-style: none;
 }
-/* line 83, ../sass/partials/_modules.scss */
+/* line 82, ../sass/partials/_modules.scss */
 body.active nav[role='navigation'] aside#main_nav ul.chapter-list li.chapter-summary, body.active nav[role='navigation'] aside#main_nav aside#sociallinks ul.sociallinks li.chapter-summary, body.active nav[role='navigation'] aside#sociallinks aside#main_nav ul.sociallinks li.chapter-summary, body.active nav[role='navigation'] aside#main_nav aside#about_me ul.sociallinks li.chapter-summary, body.active nav[role='navigation'] aside#about_me aside#main_nav ul.sociallinks li.chapter-summary, body.active nav[role='navigation'] aside#search aside#main_nav ul.sociallinks li.chapter-summary, body.active nav[role='navigation'] aside#main_nav aside#categories ul.sociallinks li.chapter-summary, body.active nav[role='navigation'] aside#categories aside#main_nav ul.sociallinks li.chapter-summary, body.active nav[role='navigation'] aside#main_nav aside#search li.chapter-summary {
   padding: .5em;
   font-size: 1.1em;
@@ -567,7 +567,7 @@ body.active nav[role='navigation'] aside#main_nav ul.chapter-list li.chapter-sum
   text-align: center;
   text-transform: uppercase;
 }
-/* line 90, ../sass/partials/_modules.scss */
+/* line 89, ../sass/partials/_modules.scss */
 body.active nav[role='navigation'] aside#main_nav ul.chapter-list li.chapter-summary a, body.active nav[role='navigation'] aside#main_nav aside#sociallinks ul.sociallinks li.chapter-summary a, body.active nav[role='navigation'] aside#sociallinks aside#main_nav ul.sociallinks li.chapter-summary a, body.active nav[role='navigation'] aside#main_nav aside#about_me ul.sociallinks li.chapter-summary a, body.active nav[role='navigation'] aside#about_me aside#main_nav ul.sociallinks li.chapter-summary a, body.active nav[role='navigation'] aside#search aside#main_nav ul.sociallinks li.chapter-summary a, body.active nav[role='navigation'] aside#main_nav aside#categories ul.sociallinks li.chapter-summary a, body.active nav[role='navigation'] aside#categories aside#main_nav ul.sociallinks li.chapter-summary a, body.active nav[role='navigation'] aside#main_nav aside#search li.chapter-summary a {
   display: inline-block;
   font-family: "brandon-grotesque";
@@ -577,16 +577,18 @@ body.active nav[role='navigation'] aside#main_nav ul.chapter-list li.chapter-sum
   opacity: .8;
   border: none;
 }
-/* line 98, ../sass/partials/_modules.scss */
+/* line 97, ../sass/partials/_modules.scss */
 body.active nav[role='navigation'] aside#main_nav ul.chapter-list li.chapter-summary a:hover, body.active nav[role='navigation'] aside#main_nav aside#sociallinks ul.sociallinks li.chapter-summary a:hover, body.active nav[role='navigation'] aside#sociallinks aside#main_nav ul.sociallinks li.chapter-summary a:hover, body.active nav[role='navigation'] aside#main_nav aside#about_me ul.sociallinks li.chapter-summary a:hover, body.active nav[role='navigation'] aside#about_me aside#main_nav ul.sociallinks li.chapter-summary a:hover, body.active nav[role='navigation'] aside#search aside#main_nav ul.sociallinks li.chapter-summary a:hover, body.active nav[role='navigation'] aside#main_nav aside#categories ul.sociallinks li.chapter-summary a:hover, body.active nav[role='navigation'] aside#categories aside#main_nav ul.sociallinks li.chapter-summary a:hover, body.active nav[role='navigation'] aside#main_nav aside#search li.chapter-summary a:hover {
   opacity: 1;
 }
-/* line 101, ../sass/partials/_modules.scss */
+/* line 100, ../sass/partials/_modules.scss */
 body.active nav[role='navigation'] aside#main_nav ul.chapter-list li.chapter-summary a:visited, body.active nav[role='navigation'] aside#main_nav aside#sociallinks ul.sociallinks li.chapter-summary a:visited, body.active nav[role='navigation'] aside#sociallinks aside#main_nav ul.sociallinks li.chapter-summary a:visited, body.active nav[role='navigation'] aside#main_nav aside#about_me ul.sociallinks li.chapter-summary a:visited, body.active nav[role='navigation'] aside#about_me aside#main_nav ul.sociallinks li.chapter-summary a:visited, body.active nav[role='navigation'] aside#search aside#main_nav ul.sociallinks li.chapter-summary a:visited, body.active nav[role='navigation'] aside#main_nav aside#categories ul.sociallinks li.chapter-summary a:visited, body.active nav[role='navigation'] aside#categories aside#main_nav ul.sociallinks li.chapter-summary a:visited, body.active nav[role='navigation'] aside#main_nav aside#search li.chapter-summary a:visited {
   opacity: .9;
 }
-/* line 111, ../sass/partials/_modules.scss */
+/* line 110, ../sass/partials/_modules.scss */
 body.active nav[role='navigation'] aside#sociallinks, body.active nav[role='navigation'] aside#about_me, body.active nav[role='navigation'] aside#search, body.active nav[role='navigation'] aside#categories {
+  margin-left: 11.32075%;
+  margin-right: 11.32075%;
   margin-top: 5em;
 }
 /* line 115, ../sass/partials/_modules.scss */
