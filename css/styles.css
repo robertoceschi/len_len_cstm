@@ -717,11 +717,11 @@ body.active nav[role='navigation'] aside#categories ul {
 /* line 248, ../sass/partials/_modules.scss */
 body.active nav[role='navigation'] aside#categories ul li.cat-item {
   display: inline-block;
-  border: 1px solid #1edbb6;
+  border: 1px solid white;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin: 3%;
-  padding: 1%;
+  padding: 3%;
 }
 @media (min-width: 47em) {
   /* line 248, ../sass/partials/_modules.scss */
@@ -738,7 +738,6 @@ body.active nav[role='navigation'] aside#categories ul li.cat-item:hover {
 body.active nav[role='navigation'] aside#categories ul li.cat-item a {
   color: white;
   border-bottom: none;
-  padding: 4%;
 }
 
 /*.off-canvas-navigation {

@@ -247,14 +247,14 @@ body.active {
         text-align: center;
       li.cat-item {
         display: inline-block;
-        border: 1px solid lighten($color13, 7%);
+        border: 1px solid $color11;
         text-transform: uppercase;
         letter-spacing: 1px;
         margin: 3%;
         @include at-breakpoint($M) {
           margin: 1%;
         }
-        padding: 1%;
+        padding: 3%;
         &:hover {
           background-color: lighten($color13, 7%);
           border: 1px solid lighten($color13, 7%);
@@ -262,7 +262,7 @@ body.active {
         a {
           color: $color11;
           border-bottom: none;
-          padding: 4%;
+          //padding: 4%;
         }
       }
       }
