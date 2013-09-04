@@ -347,29 +347,29 @@ body {
   background-color: black;
   font-family: "proxima-nova";
 }
-/* line 14, ../sass/partials/_base.scss */
+/* line 11, ../sass/partials/_base.scss */
 .no-fontface body {
   font-size: 1.05em;
 }
 
-/* line 18, ../sass/partials/_base.scss */
+/* line 15, ../sass/partials/_base.scss */
 ul, li {
   margin: 0;
   padding: 0;
 }
 
-/* line 22, ../sass/partials/_base.scss */
+/* line 19, ../sass/partials/_base.scss */
 a {
   color: #3d518f;
 }
 
-/* line 25, ../sass/partials/_base.scss */
+/* line 22, ../sass/partials/_base.scss */
 ::-moz-selection {
   background: red;
   text-shadow: none;
 }
 
-/* line 29, ../sass/partials/_base.scss */
+/* line 26, ../sass/partials/_base.scss */
 ::selection {
   background: red;
   text-shadow: none;
@@ -492,27 +492,33 @@ header[role='banner'] span.sidebar-item {
   float: left;
   margin-left: 2.125%;
 }
-/* line 24, ../sass/partials/_modules.scss */
+/* line 23, ../sass/partials/_modules.scss */
 header[role='banner'] span.sidebar-item .sidebar_button {
   display: block;
   height: 50px;
-  padding: 19px 45px 0 0;
+  padding: 21px 45px 0 0;
   font-size: 0.8em;
   color: black;
   text-align: right;
   font-family: "p22-underground-sc";
 }
 @media (min-width: 80em) {
-  /* line 24, ../sass/partials/_modules.scss */
+  /* line 23, ../sass/partials/_modules.scss */
+  header[role='banner'] span.sidebar-item .sidebar_button {
+    padding-top: 19px;
+  }
+}
+@media (min-width: 80em) {
+  /* line 23, ../sass/partials/_modules.scss */
   header[role='banner'] span.sidebar-item .sidebar_button {
     font-size: 1em;
   }
 }
-/* line 35, ../sass/partials/_modules.scss */
+/* line 37, ../sass/partials/_modules.scss */
 header[role='banner'] span.sidebar-item .sidebar_button span.menu_title {
   padding-left: 15%;
 }
-/* line 40, ../sass/partials/_modules.scss */
+/* line 42, ../sass/partials/_modules.scss */
 header[role='banner'] div.site-title {
   width: 68%;
   min-height: 50px;
@@ -520,7 +526,7 @@ header[role='banner'] div.site-title {
   padding-top: 17px;
   z-index: 100000;
 }
-/* line 46, ../sass/partials/_modules.scss */
+/* line 48, ../sass/partials/_modules.scss */
 header[role='banner'] div.site-title h1.main-link-headline {
   margin: 0 5% 0 0;
   padding-bottom: 5px;
@@ -534,7 +540,7 @@ header[role='banner'] div.site-title h1.main-link-headline {
   text-align: right;
 }
 @media (min-width: 80em) {
-  /* line 46, ../sass/partials/_modules.scss */
+  /* line 48, ../sass/partials/_modules.scss */
   header[role='banner'] div.site-title h1.main-link-headline {
     font-size: 1.3em;
     position: fixed;
@@ -545,20 +551,23 @@ header[role='banner'] div.site-title h1.main-link-headline {
   }
 }
 
-/* line 75, ../sass/partials/_modules.scss */
+/* line 77, ../sass/partials/_modules.scss */
 body.active nav[role='navigation'] {
   text-align: center;
+  /* Form wrapper styling */
+  /* Form text input */
+  /* Form submit button */
 }
-/* line 77, ../sass/partials/_modules.scss */
+/* line 79, ../sass/partials/_modules.scss */
 body.active nav[role='navigation'] aside#main_nav {
   margin: 2.5em;
   overflow: hidden;
 }
-/* line 80, ../sass/partials/_modules.scss */
+/* line 82, ../sass/partials/_modules.scss */
 body.active nav[role='navigation'] aside#main_nav ul.chapter-list, body.active nav[role='navigation'] aside#main_nav aside#sociallinks ul.sociallinks, body.active nav[role='navigation'] aside#sociallinks aside#main_nav ul.sociallinks, body.active nav[role='navigation'] aside#main_nav aside#about_me ul.sociallinks, body.active nav[role='navigation'] aside#about_me aside#main_nav ul.sociallinks, body.active nav[role='navigation'] aside#main_nav aside#search ul.sociallinks, body.active nav[role='navigation'] aside#search aside#main_nav ul.sociallinks, body.active nav[role='navigation'] aside#main_nav aside#categories ul.sociallinks, body.active nav[role='navigation'] aside#categories aside#main_nav ul.sociallinks, body.active nav[role='navigation'] aside#main_nav aside#search {
   list-style: none;
 }
-/* line 82, ../sass/partials/_modules.scss */
+/* line 84, ../sass/partials/_modules.scss */
 body.active nav[role='navigation'] aside#main_nav ul.chapter-list li.chapter-summary, body.active nav[role='navigation'] aside#main_nav aside#sociallinks ul.sociallinks li.chapter-summary, body.active nav[role='navigation'] aside#sociallinks aside#main_nav ul.sociallinks li.chapter-summary, body.active nav[role='navigation'] aside#main_nav aside#about_me ul.sociallinks li.chapter-summary, body.active nav[role='navigation'] aside#about_me aside#main_nav ul.sociallinks li.chapter-summary, body.active nav[role='navigation'] aside#search aside#main_nav ul.sociallinks li.chapter-summary, body.active nav[role='navigation'] aside#main_nav aside#categories ul.sociallinks li.chapter-summary, body.active nav[role='navigation'] aside#categories aside#main_nav ul.sociallinks li.chapter-summary, body.active nav[role='navigation'] aside#main_nav aside#search li.chapter-summary {
   padding: .5em;
   font-size: 1.1em;
@@ -567,65 +576,97 @@ body.active nav[role='navigation'] aside#main_nav ul.chapter-list li.chapter-sum
   text-align: center;
   text-transform: uppercase;
 }
-/* line 89, ../sass/partials/_modules.scss */
+/* line 91, ../sass/partials/_modules.scss */
 body.active nav[role='navigation'] aside#main_nav ul.chapter-list li.chapter-summary a, body.active nav[role='navigation'] aside#main_nav aside#sociallinks ul.sociallinks li.chapter-summary a, body.active nav[role='navigation'] aside#sociallinks aside#main_nav ul.sociallinks li.chapter-summary a, body.active nav[role='navigation'] aside#main_nav aside#about_me ul.sociallinks li.chapter-summary a, body.active nav[role='navigation'] aside#about_me aside#main_nav ul.sociallinks li.chapter-summary a, body.active nav[role='navigation'] aside#search aside#main_nav ul.sociallinks li.chapter-summary a, body.active nav[role='navigation'] aside#main_nav aside#categories ul.sociallinks li.chapter-summary a, body.active nav[role='navigation'] aside#categories aside#main_nav ul.sociallinks li.chapter-summary a, body.active nav[role='navigation'] aside#main_nav aside#search li.chapter-summary a {
   display: inline-block;
-  font-family: "brandon-grotesque";
   font-weight: normal;
   text-align: center;
   color: white;
   opacity: .8;
   border: none;
 }
-/* line 97, ../sass/partials/_modules.scss */
+/* line 99, ../sass/partials/_modules.scss */
+body.active nav[role='navigation'] aside#main_nav ul.chapter-list li.chapter-summary a::before, body.active nav[role='navigation'] aside#main_nav aside#sociallinks ul.sociallinks li.chapter-summary a::before, body.active nav[role='navigation'] aside#sociallinks aside#main_nav ul.sociallinks li.chapter-summary a::before, body.active nav[role='navigation'] aside#main_nav aside#about_me ul.sociallinks li.chapter-summary a::before, body.active nav[role='navigation'] aside#about_me aside#main_nav ul.sociallinks li.chapter-summary a::before, body.active nav[role='navigation'] aside#search aside#main_nav ul.sociallinks li.chapter-summary a::before, body.active nav[role='navigation'] aside#main_nav aside#categories ul.sociallinks li.chapter-summary a::before, body.active nav[role='navigation'] aside#categories aside#main_nav ul.sociallinks li.chapter-summary a::before, body.active nav[role='navigation'] aside#main_nav aside#search li.chapter-summary a::before, body.active nav[role='navigation'] aside#main_nav ul.chapter-list li.chapter-summary a::after, body.active nav[role='navigation'] aside#main_nav aside#sociallinks ul.sociallinks li.chapter-summary a::after, body.active nav[role='navigation'] aside#sociallinks aside#main_nav ul.sociallinks li.chapter-summary a::after, body.active nav[role='navigation'] aside#main_nav aside#about_me ul.sociallinks li.chapter-summary a::after, body.active nav[role='navigation'] aside#about_me aside#main_nav ul.sociallinks li.chapter-summary a::after, body.active nav[role='navigation'] aside#search aside#main_nav ul.sociallinks li.chapter-summary a::after, body.active nav[role='navigation'] aside#main_nav aside#categories ul.sociallinks li.chapter-summary a::after, body.active nav[role='navigation'] aside#categories aside#main_nav ul.sociallinks li.chapter-summary a::after, body.active nav[role='navigation'] aside#main_nav aside#search li.chapter-summary a::after {
+  display: inline-block;
+  opacity: 0;
+  -webkit-transition: 0.3s ease-in, 0.2s ease-out;
+  -moz-transition: 0.3s ease-in, 0.2s ease-out;
+  -o-transition: 0.3s ease-in, 0.2s ease-out;
+  transition: 0.3s ease-in, 0.2s ease-out;
+}
+/* line 105, ../sass/partials/_modules.scss */
+body.active nav[role='navigation'] aside#main_nav ul.chapter-list li.chapter-summary a::before, body.active nav[role='navigation'] aside#main_nav aside#sociallinks ul.sociallinks li.chapter-summary a::before, body.active nav[role='navigation'] aside#sociallinks aside#main_nav ul.sociallinks li.chapter-summary a::before, body.active nav[role='navigation'] aside#main_nav aside#about_me ul.sociallinks li.chapter-summary a::before, body.active nav[role='navigation'] aside#about_me aside#main_nav ul.sociallinks li.chapter-summary a::before, body.active nav[role='navigation'] aside#search aside#main_nav ul.sociallinks li.chapter-summary a::before, body.active nav[role='navigation'] aside#main_nav aside#categories ul.sociallinks li.chapter-summary a::before, body.active nav[role='navigation'] aside#categories aside#main_nav ul.sociallinks li.chapter-summary a::before, body.active nav[role='navigation'] aside#main_nav aside#search li.chapter-summary a::before {
+  margin-right: 3px;
+  content: '[';
+  -webkit-transform: translateX(20px);
+  -moz-transform: translateX(20px);
+  transform: translateX(20px);
+}
+/* line 112, ../sass/partials/_modules.scss */
+body.active nav[role='navigation'] aside#main_nav ul.chapter-list li.chapter-summary a::after, body.active nav[role='navigation'] aside#main_nav aside#sociallinks ul.sociallinks li.chapter-summary a::after, body.active nav[role='navigation'] aside#sociallinks aside#main_nav ul.sociallinks li.chapter-summary a::after, body.active nav[role='navigation'] aside#main_nav aside#about_me ul.sociallinks li.chapter-summary a::after, body.active nav[role='navigation'] aside#about_me aside#main_nav ul.sociallinks li.chapter-summary a::after, body.active nav[role='navigation'] aside#search aside#main_nav ul.sociallinks li.chapter-summary a::after, body.active nav[role='navigation'] aside#main_nav aside#categories ul.sociallinks li.chapter-summary a::after, body.active nav[role='navigation'] aside#categories aside#main_nav ul.sociallinks li.chapter-summary a::after, body.active nav[role='navigation'] aside#main_nav aside#search li.chapter-summary a::after {
+  margin-left: 3px;
+  content: ']';
+  -webkit-transform: translateX(-20px);
+  -moz-transform: translateX(-20px);
+  transform: translateX(-20px);
+}
+/* line 123, ../sass/partials/_modules.scss */
+body.active nav[role='navigation'] aside#main_nav ul.chapter-list li.chapter-summary a:hover::before, body.active nav[role='navigation'] aside#main_nav aside#sociallinks ul.sociallinks li.chapter-summary a:hover::before, body.active nav[role='navigation'] aside#sociallinks aside#main_nav ul.sociallinks li.chapter-summary a:hover::before, body.active nav[role='navigation'] aside#main_nav aside#about_me ul.sociallinks li.chapter-summary a:hover::before, body.active nav[role='navigation'] aside#about_me aside#main_nav ul.sociallinks li.chapter-summary a:hover::before, body.active nav[role='navigation'] aside#search aside#main_nav ul.sociallinks li.chapter-summary a:hover::before, body.active nav[role='navigation'] aside#main_nav aside#categories ul.sociallinks li.chapter-summary a:hover::before, body.active nav[role='navigation'] aside#categories aside#main_nav ul.sociallinks li.chapter-summary a:hover::before, body.active nav[role='navigation'] aside#main_nav aside#search li.chapter-summary a:hover::before, body.active nav[role='navigation'] aside#main_nav ul.chapter-list li.chapter-summary a:hover::after, body.active nav[role='navigation'] aside#main_nav aside#sociallinks ul.sociallinks li.chapter-summary a:hover::after, body.active nav[role='navigation'] aside#sociallinks aside#main_nav ul.sociallinks li.chapter-summary a:hover::after, body.active nav[role='navigation'] aside#main_nav aside#about_me ul.sociallinks li.chapter-summary a:hover::after, body.active nav[role='navigation'] aside#about_me aside#main_nav ul.sociallinks li.chapter-summary a:hover::after, body.active nav[role='navigation'] aside#search aside#main_nav ul.sociallinks li.chapter-summary a:hover::after, body.active nav[role='navigation'] aside#main_nav aside#categories ul.sociallinks li.chapter-summary a:hover::after, body.active nav[role='navigation'] aside#categories aside#main_nav ul.sociallinks li.chapter-summary a:hover::after, body.active nav[role='navigation'] aside#main_nav aside#search li.chapter-summary a:hover::after, body.active nav[role='navigation'] aside#main_nav ul.chapter-list li.chapter-summary a:focus::before, body.active nav[role='navigation'] aside#main_nav aside#sociallinks ul.sociallinks li.chapter-summary a:focus::before, body.active nav[role='navigation'] aside#sociallinks aside#main_nav ul.sociallinks li.chapter-summary a:focus::before, body.active nav[role='navigation'] aside#main_nav aside#about_me ul.sociallinks li.chapter-summary a:focus::before, body.active nav[role='navigation'] aside#about_me aside#main_nav ul.sociallinks li.chapter-summary a:focus::before, body.active nav[role='navigation'] aside#search aside#main_nav ul.sociallinks li.chapter-summary a:focus::before, body.active nav[role='navigation'] aside#main_nav aside#categories ul.sociallinks li.chapter-summary a:focus::before, body.active nav[role='navigation'] aside#categories aside#main_nav ul.sociallinks li.chapter-summary a:focus::before, body.active nav[role='navigation'] aside#main_nav aside#search li.chapter-summary a:focus::before, body.active nav[role='navigation'] aside#main_nav ul.chapter-list li.chapter-summary a:focus::after, body.active nav[role='navigation'] aside#main_nav aside#sociallinks ul.sociallinks li.chapter-summary a:focus::after, body.active nav[role='navigation'] aside#sociallinks aside#main_nav ul.sociallinks li.chapter-summary a:focus::after, body.active nav[role='navigation'] aside#main_nav aside#about_me ul.sociallinks li.chapter-summary a:focus::after, body.active nav[role='navigation'] aside#about_me aside#main_nav ul.sociallinks li.chapter-summary a:focus::after, body.active nav[role='navigation'] aside#search aside#main_nav ul.sociallinks li.chapter-summary a:focus::after, body.active nav[role='navigation'] aside#main_nav aside#categories ul.sociallinks li.chapter-summary a:focus::after, body.active nav[role='navigation'] aside#categories aside#main_nav ul.sociallinks li.chapter-summary a:focus::after, body.active nav[role='navigation'] aside#main_nav aside#search li.chapter-summary a:focus::after {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  transform: translateX(0px);
+  -webkit-transform: translateY(-2px);
+}
+/* line 130, ../sass/partials/_modules.scss */
 body.active nav[role='navigation'] aside#main_nav ul.chapter-list li.chapter-summary a:hover, body.active nav[role='navigation'] aside#main_nav aside#sociallinks ul.sociallinks li.chapter-summary a:hover, body.active nav[role='navigation'] aside#sociallinks aside#main_nav ul.sociallinks li.chapter-summary a:hover, body.active nav[role='navigation'] aside#main_nav aside#about_me ul.sociallinks li.chapter-summary a:hover, body.active nav[role='navigation'] aside#about_me aside#main_nav ul.sociallinks li.chapter-summary a:hover, body.active nav[role='navigation'] aside#search aside#main_nav ul.sociallinks li.chapter-summary a:hover, body.active nav[role='navigation'] aside#main_nav aside#categories ul.sociallinks li.chapter-summary a:hover, body.active nav[role='navigation'] aside#categories aside#main_nav ul.sociallinks li.chapter-summary a:hover, body.active nav[role='navigation'] aside#main_nav aside#search li.chapter-summary a:hover {
   opacity: 1;
 }
-/* line 100, ../sass/partials/_modules.scss */
+/* line 133, ../sass/partials/_modules.scss */
 body.active nav[role='navigation'] aside#main_nav ul.chapter-list li.chapter-summary a:visited, body.active nav[role='navigation'] aside#main_nav aside#sociallinks ul.sociallinks li.chapter-summary a:visited, body.active nav[role='navigation'] aside#sociallinks aside#main_nav ul.sociallinks li.chapter-summary a:visited, body.active nav[role='navigation'] aside#main_nav aside#about_me ul.sociallinks li.chapter-summary a:visited, body.active nav[role='navigation'] aside#about_me aside#main_nav ul.sociallinks li.chapter-summary a:visited, body.active nav[role='navigation'] aside#search aside#main_nav ul.sociallinks li.chapter-summary a:visited, body.active nav[role='navigation'] aside#main_nav aside#categories ul.sociallinks li.chapter-summary a:visited, body.active nav[role='navigation'] aside#categories aside#main_nav ul.sociallinks li.chapter-summary a:visited, body.active nav[role='navigation'] aside#main_nav aside#search li.chapter-summary a:visited {
   opacity: .9;
 }
-/* line 110, ../sass/partials/_modules.scss */
+/* line 143, ../sass/partials/_modules.scss */
 body.active nav[role='navigation'] aside#sociallinks, body.active nav[role='navigation'] aside#about_me, body.active nav[role='navigation'] aside#search, body.active nav[role='navigation'] aside#categories {
   margin-left: 11.32075%;
   margin-right: 11.32075%;
   margin-top: 5em;
 }
-/* line 115, ../sass/partials/_modules.scss */
+/* line 148, ../sass/partials/_modules.scss */
 body.active nav[role='navigation'] aside#sociallinks ul.sociallinks li, body.active nav[role='navigation'] aside#about_me ul.sociallinks li, body.active nav[role='navigation'] aside#search ul.sociallinks li, body.active nav[role='navigation'] aside#categories ul.sociallinks li {
   text-align: center;
 }
-/* line 117, ../sass/partials/_modules.scss */
+/* line 150, ../sass/partials/_modules.scss */
 body.active nav[role='navigation'] aside#sociallinks ul.sociallinks li a, body.active nav[role='navigation'] aside#about_me ul.sociallinks li a, body.active nav[role='navigation'] aside#search ul.sociallinks li a, body.active nav[role='navigation'] aside#categories ul.sociallinks li a {
   border-bottom: none;
   display: inline;
   margin: 0 5px 0 5px;
 }
-/* line 122, ../sass/partials/_modules.scss */
+/* line 155, ../sass/partials/_modules.scss */
 body.active nav[role='navigation'] aside#sociallinks ul.sociallinks li a .icon-facebook, body.active nav[role='navigation'] aside#about_me ul.sociallinks li a .icon-facebook, body.active nav[role='navigation'] aside#search ul.sociallinks li a .icon-facebook, body.active nav[role='navigation'] aside#categories ul.sociallinks li a .icon-facebook, body.active nav[role='navigation'] aside#sociallinks ul.sociallinks li a .icon-twitter, body.active nav[role='navigation'] aside#about_me ul.sociallinks li a .icon-twitter, body.active nav[role='navigation'] aside#search ul.sociallinks li a .icon-twitter, body.active nav[role='navigation'] aside#categories ul.sociallinks li a .icon-twitter, body.active nav[role='navigation'] aside#sociallinks ul.sociallinks li a .icon-instagram, body.active nav[role='navigation'] aside#about_me ul.sociallinks li a .icon-instagram, body.active nav[role='navigation'] aside#search ul.sociallinks li a .icon-instagram, body.active nav[role='navigation'] aside#categories ul.sociallinks li a .icon-instagram {
   font-size: 2.1em;
   color: white;
   opacity: .8;
 }
-/* line 126, ../sass/partials/_modules.scss */
+/* line 159, ../sass/partials/_modules.scss */
 body.active nav[role='navigation'] aside#sociallinks ul.sociallinks li a .icon-facebook:hover, body.active nav[role='navigation'] aside#about_me ul.sociallinks li a .icon-facebook:hover, body.active nav[role='navigation'] aside#search ul.sociallinks li a .icon-facebook:hover, body.active nav[role='navigation'] aside#categories ul.sociallinks li a .icon-facebook:hover, body.active nav[role='navigation'] aside#sociallinks ul.sociallinks li a .icon-twitter:hover, body.active nav[role='navigation'] aside#about_me ul.sociallinks li a .icon-twitter:hover, body.active nav[role='navigation'] aside#search ul.sociallinks li a .icon-twitter:hover, body.active nav[role='navigation'] aside#categories ul.sociallinks li a .icon-twitter:hover, body.active nav[role='navigation'] aside#sociallinks ul.sociallinks li a .icon-instagram:hover, body.active nav[role='navigation'] aside#about_me ul.sociallinks li a .icon-instagram:hover, body.active nav[role='navigation'] aside#search ul.sociallinks li a .icon-instagram:hover, body.active nav[role='navigation'] aside#categories ul.sociallinks li a .icon-instagram:hover {
   opacity: 1;
 }
-/* line 129, ../sass/partials/_modules.scss */
+/* line 162, ../sass/partials/_modules.scss */
 body.active nav[role='navigation'] aside#sociallinks ul.sociallinks li a .icon-facebook:visited, body.active nav[role='navigation'] aside#about_me ul.sociallinks li a .icon-facebook:visited, body.active nav[role='navigation'] aside#search ul.sociallinks li a .icon-facebook:visited, body.active nav[role='navigation'] aside#categories ul.sociallinks li a .icon-facebook:visited, body.active nav[role='navigation'] aside#sociallinks ul.sociallinks li a .icon-twitter:visited, body.active nav[role='navigation'] aside#about_me ul.sociallinks li a .icon-twitter:visited, body.active nav[role='navigation'] aside#search ul.sociallinks li a .icon-twitter:visited, body.active nav[role='navigation'] aside#categories ul.sociallinks li a .icon-twitter:visited, body.active nav[role='navigation'] aside#sociallinks ul.sociallinks li a .icon-instagram:visited, body.active nav[role='navigation'] aside#about_me ul.sociallinks li a .icon-instagram:visited, body.active nav[role='navigation'] aside#search ul.sociallinks li a .icon-instagram:visited, body.active nav[role='navigation'] aside#categories ul.sociallinks li a .icon-instagram:visited {
   opacity: .9;
 }
-/* line 144, ../sass/partials/_modules.scss */
+/* line 177, ../sass/partials/_modules.scss */
 body.active nav[role='navigation'] aside#sociallinks h3, body.active nav[role='navigation'] aside#about_me h3, body.active nav[role='navigation'] aside#search h3, body.active nav[role='navigation'] aside#categories h3 {
   position: relative;
   margin-top: 20px;
   color: white;
 }
-/* line 149, ../sass/partials/_modules.scss */
+/* line 182, ../sass/partials/_modules.scss */
 body.active nav[role='navigation'] aside#sociallinks h3.one, body.active nav[role='navigation'] aside#about_me h3.one, body.active nav[role='navigation'] aside#search h3.one, body.active nav[role='navigation'] aside#categories h3.one {
   margin-top: 0;
 }
-/* line 152, ../sass/partials/_modules.scss */
+/* line 185, ../sass/partials/_modules.scss */
 body.active nav[role='navigation'] aside#sociallinks h3.one:before, body.active nav[role='navigation'] aside#about_me h3.one:before, body.active nav[role='navigation'] aside#search h3.one:before, body.active nav[role='navigation'] aside#categories h3.one:before {
   content: "";
   display: block;
@@ -636,85 +677,170 @@ body.active nav[role='navigation'] aside#sociallinks h3.one:before, body.active 
   top: 50%;
   z-index: 1;
 }
-/* line 162, ../sass/partials/_modules.scss */
+/* line 195, ../sass/partials/_modules.scss */
 body.active nav[role='navigation'] aside#sociallinks h3.one span, body.active nav[role='navigation'] aside#about_me h3.one span, body.active nav[role='navigation'] aside#search h3.one span, body.active nav[role='navigation'] aside#categories h3.one span {
   background: black;
   padding: 0 20px;
   position: relative;
   z-index: 5;
 }
-/* line 176, ../sass/partials/_modules.scss */
+/* line 209, ../sass/partials/_modules.scss */
 body.active nav[role='navigation'] aside#about_me .about-widget-container .about-img-wrap {
   text-align: center;
 }
-/* line 178, ../sass/partials/_modules.scss */
+/* line 211, ../sass/partials/_modules.scss */
 body.active nav[role='navigation'] aside#about_me .about-widget-container .about-img-wrap p {
   font-style: italic;
   text-align: center;
 }
-/* line 183, ../sass/partials/_modules.scss */
+/* line 216, ../sass/partials/_modules.scss */
 body.active nav[role='navigation'] aside#about_me .about-widget-container p {
   color: rgba(255, 255, 255, 0.7);
   text-align: left;
   line-height: 1.5;
 }
-/* line 195, ../sass/partials/_modules.scss */
-body.active nav[role='navigation'] aside#search #searchform {
-  max-width: 380px;
-  margin: 0 auto;
-  width: 100%;
+/* line 230, ../sass/partials/_modules.scss */
+body.active nav[role='navigation'] .form-wrapper {
+  width: 200px;
+  padding: 0 15px 0 15px;
+  margin: 0 auto 130px auto;
+  background: #444;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
 }
-/* line 199, ../sass/partials/_modules.scss */
-body.active nav[role='navigation'] aside#search #searchform input[type=text] {
-  width: 50%;
-  margin: 0 2% 0 0;
-  padding: 9px 2%;
-  font-size: 0.75rem;
-  color: #999;
-  letter-spacing: 1px;
-  -webkit-appearance: none;
-  outline-color: transparent;
-  outline-style: none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  border: 1px solid transparent;
-}
-@media (min-width: 47em) {
-  /* line 199, ../sass/partials/_modules.scss */
-  body.active nav[role='navigation'] aside#search #searchform input[type=text] {
-    width: 60%;
+@media (min-width: 35em) {
+  /* line 230, ../sass/partials/_modules.scss */
+  body.active nav[role='navigation'] .form-wrapper {
+    width: 350px;
   }
 }
-/* line 219, ../sass/partials/_modules.scss */
-body.active nav[role='navigation'] aside#search #searchform input[type=submit] {
-  margin: 0 2% 0 0;
-  width: 90px;
-  padding-top: 1.5%;
-  height: 35px;
-  font-size: 0.75em;
-  border: none;
-  color: #fff;
-  background-color: #1abc9c;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+@media (min-width: 47em) {
+  /* line 230, ../sass/partials/_modules.scss */
+  body.active nav[role='navigation'] .form-wrapper {
+    width: 450px;
+  }
+}
+/* line 248, ../sass/partials/_modules.scss */
+body.active nav[role='navigation'] .form-wrapper input {
+  font-family: "proxima-nova";
+  width: 100px;
+  height: 40px;
+  padding: 10px 10px;
+  float: left;
+  border: 0;
+  background: #eee;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+@media (min-width: 35em) {
+  /* line 248, ../sass/partials/_modules.scss */
+  body.active nav[role='navigation'] .form-wrapper input {
+    width: 210px;
+    font-size: 15px;
+  }
+}
+@media (min-width: 47em) {
+  /* line 248, ../sass/partials/_modules.scss */
+  body.active nav[role='navigation'] .form-wrapper input {
+    width: 310px;
+    font-size: 15px;
+  }
+}
+/* line 268, ../sass/partials/_modules.scss */
+body.active nav[role='navigation'] .form-wrapper input:focus {
+  outline: 0;
+  background: #fff;
+}
+/* line 273, ../sass/partials/_modules.scss */
+body.active nav[role='navigation'] .form-wrapper input::-webkit-input-placeholder {
+  color: #999;
+  font-weight: normal;
+  font-style: italic;
+}
+/* line 279, ../sass/partials/_modules.scss */
+body.active nav[role='navigation'] .form-wrapper input:-moz-placeholder {
+  color: #999;
+  font-weight: normal;
+  font-style: italic;
+}
+/* line 285, ../sass/partials/_modules.scss */
+body.active nav[role='navigation'] .form-wrapper input:-ms-input-placeholder {
+  color: #999;
+  font-weight: normal;
+  font-style: italic;
+}
+/* line 292, ../sass/partials/_modules.scss */
+body.active nav[role='navigation'] .form-wrapper button {
+  font-family: proxima-nova;
+  overflow: visible;
+  position: relative;
+  float: right;
+  border: 0;
+  padding: 0;
   cursor: pointer;
-  -webkit-appearance: none;
-  -webkit-border-radius: 0;
-  -webkit-transition: all 0.18s ease-in-out;
-  -moz-transition: all 0.18s ease-in-out;
-  -o-transition: all 0.18s ease-in-out;
-  transition: all 0.18s ease-in-out;
+  height: 40px;
+  width: 70px;
+  font-size: 13px;
+  color: #fff;
+  text-transform: uppercase;
+  background: #1abc9c;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+  letter-spacing: 1px;
 }
-/* line 237, ../sass/partials/_modules.scss */
-body.active nav[role='navigation'] aside#search #searchform input[type=submit]:hover {
-  background-color: #1edbb6;
+@media (min-width: 35em) {
+  /* line 292, ../sass/partials/_modules.scss */
+  body.active nav[role='navigation'] .form-wrapper button {
+    width: 110px;
+    font-size: 14px;
+  }
 }
-/* line 246, ../sass/partials/_modules.scss */
+@media (min-width: 47em) {
+  /* line 292, ../sass/partials/_modules.scss */
+  body.active nav[role='navigation'] .form-wrapper button {
+    font-size: 16px;
+  }
+}
+/* line 317, ../sass/partials/_modules.scss */
+body.active nav[role='navigation'] .form-wrapper button:hover {
+  background: #1edbb6;
+}
+/* line 323, ../sass/partials/_modules.scss */
+body.active nav[role='navigation'] .form-wrapper button:active,
+body.active nav[role='navigation'] .form-wrapper button:focus {
+  background: #1abc9c;
+  outline: 0;
+}
+/* line 328, ../sass/partials/_modules.scss */
+body.active nav[role='navigation'] .form-wrapper button:before {
+  /* left arrow */
+  content: '';
+  position: absolute;
+  border-width: 8px 8px 8px 0;
+  border-style: solid solid solid none;
+  border-color: transparent #1abc9c transparent;
+  top: 12px;
+  left: -6px;
+}
+/* line 339, ../sass/partials/_modules.scss */
+body.active nav[role='navigation'] .form-wrapper button:hover:before {
+  border-right-color: #1edbb6;
+}
+/* line 344, ../sass/partials/_modules.scss */
+body.active nav[role='navigation'] .form-wrapper button:focus:before,
+body.active nav[role='navigation'] .form-wrapper button:active:before {
+  border-right-color: #1abc9c;
+}
+/* line 348, ../sass/partials/_modules.scss */
+body.active nav[role='navigation'] .form-wrapper button::-moz-focus-inner {
+  /* remove extra button spacing for Mozilla Firefox */
+  border: 0;
+  padding: 0;
+}
+/* line 356, ../sass/partials/_modules.scss */
 body.active nav[role='navigation'] aside#categories ul {
   text-align: center;
 }
-/* line 248, ../sass/partials/_modules.scss */
+/* line 358, ../sass/partials/_modules.scss */
 body.active nav[role='navigation'] aside#categories ul li.cat-item {
   display: inline-block;
   border: 1px solid white;
@@ -724,43 +850,29 @@ body.active nav[role='navigation'] aside#categories ul li.cat-item {
   padding: 3%;
 }
 @media (min-width: 47em) {
-  /* line 248, ../sass/partials/_modules.scss */
+  /* line 358, ../sass/partials/_modules.scss */
   body.active nav[role='navigation'] aside#categories ul li.cat-item {
     margin: 1.5%;
   }
 }
 @media (min-width: 35em) {
-  /* line 248, ../sass/partials/_modules.scss */
+  /* line 358, ../sass/partials/_modules.scss */
   body.active nav[role='navigation'] aside#categories ul li.cat-item {
     padding: 1%;
   }
 }
-/* line 261, ../sass/partials/_modules.scss */
+/* line 371, ../sass/partials/_modules.scss */
 body.active nav[role='navigation'] aside#categories ul li.cat-item:hover {
   background-color: #1edbb6;
   border: 1px solid #1edbb6;
 }
-/* line 265, ../sass/partials/_modules.scss */
+/* line 375, ../sass/partials/_modules.scss */
 body.active nav[role='navigation'] aside#categories ul li.cat-item a {
   color: white;
   border-bottom: none;
 }
 
-/*.off-canvas-navigation {
-  display: block;
-  width: 100%;
-  float: left;
-  margin: 20px 0 10px 0;
-  // Hide at medium+ viewport sizes:
-  @include at-breakpoint($M) {
-	//display: none;
-  }
-}*/
-/*.purchase-links-wrapper {
-  list-style: none;
-  margin: 30px 0 0 0;
-}*/
-/* line 299, ../sass/partials/_modules.scss */
+/* line 386, ../sass/partials/_modules.scss */
 #main_image {
   background-image: url('../img/ellen-header.jpg?1376551733');
   background-repeat: no-repeat;
@@ -775,26 +887,26 @@ body.active nav[role='navigation'] aside#categories ul li.cat-item a {
   text-align: center;
 }
 @media (min-width: 47em) {
-  /* line 299, ../sass/partials/_modules.scss */
+  /* line 386, ../sass/partials/_modules.scss */
   #main_image {
     min-height: 480px;
   }
 }
 @media (min-width: 80em) {
-  /* line 299, ../sass/partials/_modules.scss */
+  /* line 386, ../sass/partials/_modules.scss */
   #main_image {
     min-height: 700px;
     background-size: cover !important;
   }
 }
 @media (min-width: 90em) {
-  /* line 299, ../sass/partials/_modules.scss */
+  /* line 386, ../sass/partials/_modules.scss */
   #main_image {
     background-size: cover !important;
     height: 900px;
   }
 }
-/* line 327, ../sass/partials/_modules.scss */
+/* line 414, ../sass/partials/_modules.scss */
 #main_image .headline {
   color: #fff;
   margin-top: 20%;
@@ -803,40 +915,44 @@ body.active nav[role='navigation'] aside#categories ul li.cat-item a {
   line-height: 1.25;
   font-family: "proxima-nova";
 }
-@media (min-width: 47em) {
-  /* line 335, ../sass/partials/_modules.scss */
+/* line 422, ../sass/partials/_modules.scss */
+#main_image a {
+  display: none;
+}
+@media (min-width: 80em) {
+  /* line 422, ../sass/partials/_modules.scss */
   #main_image a {
     display: block;
     border-bottom: none;
     margin-bottom: 15px;
   }
 }
-/* line 343, ../sass/partials/_modules.scss */
+/* line 430, ../sass/partials/_modules.scss */
 #main_image p {
   color: #fff;
   font-style: italic;
-  margin-bottom: 7px;
+  margin-bottom: -2px;
 }
 
-/* line 350, ../sass/partials/_modules.scss */
+/* line 437, ../sass/partials/_modules.scss */
 .main-content {
   background-color: white;
 }
 
-/* line 356, ../sass/partials/_modules.scss */
+/* line 443, ../sass/partials/_modules.scss */
 #content {
   width: 1040px;
   /*width: 95%;*/
   margin: 3.5em auto;
 }
 
-/* line 363, ../sass/partials/_modules.scss */
+/* line 450, ../sass/partials/_modules.scss */
 #site-content {
   max-width: 100%;
   margin: 0;
 }
 
-/* line 369, ../sass/partials/_modules.scss */
+/* line 455, ../sass/partials/_modules.scss */
 .item {
   display: block;
   float: left;
@@ -848,12 +964,12 @@ body.active nav[role='navigation'] aside#categories ul li.cat-item a {
   transition: left .4s ease-in-out, top .4s ease-in-out .4s;
 }
 
-/* line 382, ../sass/partials/_modules.scss */
+/* line 468, ../sass/partials/_modules.scss */
 .featured {
   width: 520px;
 }
 
-/* line 386, ../sass/partials/_modules.scss */
+/* line 472, ../sass/partials/_modules.scss */
 .item img {
   width: 260px;
   height: auto;
@@ -862,16 +978,16 @@ body.active nav[role='navigation'] aside#categories ul li.cat-item a {
   padding-bottom: 40px;
 }
 
-/* line 394, ../sass/partials/_modules.scss */
+/* line 480, ../sass/partials/_modules.scss */
 .featured img {
   width: 520px;
   height: auto;
-  padding-right: 20x;
+  padding-right: 20 x;
   padding-left: 20px;
   padding-bottom: 40px;
 }
 
-/* line 405, ../sass/partials/_modules.scss */
+/* line 491, ../sass/partials/_modules.scss */
 [data-icon]:before {
   font-family: 'icomoon';
   content: attr(data-icon);
@@ -883,13 +999,13 @@ body.active nav[role='navigation'] aside#categories ul li.cat-item a {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 419, ../sass/partials/_modules.scss */
+/* line 503, ../sass/partials/_modules.scss */
 span.icon-heart {
   color: red;
   display: none;
 }
 
-/* line 427, ../sass/partials/_modules.scss */
+/* line 510, ../sass/partials/_modules.scss */
 .icon-arrow-down-alt1 {
   font-size: 2.5em;
   color: white;

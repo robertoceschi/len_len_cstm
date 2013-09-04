@@ -15,25 +15,11 @@ $blockquote-bg: #faebbe; // Yellowy
 $color-link: #3D518F; // blue-dark
 $color13: #1abc9c; // Mint
 
-// A simple theme switcher
-// ====================================================================
+//fonts
+$body_font:  "proxima-nova";
+$header_font: "p22-underground-sc";
 
-$color-theme: pink;
 
-@if $color-theme == pink {
-  $color-brand: pink;
-} @else if $color-theme == orange {
-  $color-brand: #ff9900;
-}
-
-$theme-complement: complement($color-theme);
-$theme-invert: invert($color-theme);
-$theme-adjust: adjust-hue($color-theme, 90deg);
-$theme-shade: shade($color-theme, 20%);
-$theme-tint: tint($color-theme, 20%);
-
-// Fonts
-$blockquote: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 
 // Mixin variables
 $defined-bs-type: border-box !default;
