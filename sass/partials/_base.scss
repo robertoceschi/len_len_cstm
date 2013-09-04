@@ -6,7 +6,7 @@ body {
   font-size: 1em;
   line-height: 1.4;
   background-color: $color10;
-  font-family: "proxima-nova";;
+  font-family: $body_font;
   // creates the tiled background to show off opacity
   //@include background(image-url("line.png"));
   //@include background(linear-gradient(top, #fff, #fefefe));

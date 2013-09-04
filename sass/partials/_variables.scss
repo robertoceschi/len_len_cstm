@@ -15,9 +15,12 @@ $blockquote-bg: #faebbe; // Yellowy
 $color-link: #3D518F; // blue-dark
 $color13: #1abc9c; // Mint
 
+//fonts
+$body_font:  "proxima-nova";
+$header_font: "p22-underground-sc";
 
-// Fonts
-$blockquote: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+
+
 // Mixin variables
 $defined-bs-type: border-box !default;
 
